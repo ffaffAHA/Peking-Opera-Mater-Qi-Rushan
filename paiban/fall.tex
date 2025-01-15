@@ -1,0 +1,30 @@
+
+\documentclass{ctexart}
+\usepackage{fontspec} % CTEX automatically loads fontspec
+
+% Set the primary CJK font
+\setCJKmainfont{ziyuesongkeben-gbk}[
+  Renderer=ICU
+]
+
+% Manually specify fallback fonts for missing characters
+\setCJKfallbackfamilyfont{\CJKrmdefault}{SimSun} % Fallback to SimSun
+\setCJKfallbackfamilyfont{\CJKrmdefault}{Microsoft YaHei} % Fallback to Microsoft YaHei
+\setCJKfallbackfamilyfont{\CJKrmdefault}{LiSu} % Fallback to LiSu
+
+% Set the English font
+\setmainfont{Times New Roman}
+
+% Title and author
+\title{滕王阁序}
+\author{王勃}
+
+\begin{document}
+
+\maketitle
+
+豫章故郡，洪都新府。星分翼轸，地接衡庐。襟三江而带五湖，控蛮荆而引瓯越。物华天宝，龙光射牛斗之墟；人杰地灵，徐孺下陈蕃之榻。雄州雾列，俊采星驰。台隍枕夷夏之交，宾主尽东南之美。都督阎公之雅望，棨戟遥临；宇文新州之懿范，䄡帷暂驻。十旬休假，胜友如云；千里逢迎，高朋满座。腾蛟起凤，孟学士之词宗；紫电青霜，王将军之武库。家君作宰，路出名区；童子何知，躬逢胜饯。
+
+这是中文测试：卽 𡃁（罕见字符）
+
+\end{document}
