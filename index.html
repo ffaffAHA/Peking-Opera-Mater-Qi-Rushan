@@ -1,0 +1,2021 @@
+<!DOCTYPE html><html><head>
+      <title>index</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      
+        <script type="text/javascript">
+          window.MathJax = ({"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"options":{},"loader":{}});
+        </script>
+        <script type="text/javascript" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" charset="UTF-8"></script>
+        
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#c9d1d9;text-shadow:none;font-family:Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::mozselection,code[class*=language-]::selection,pre[class*=language-]::mozselection,pre[class*=language-]::selection{text-shadow:none;background:#234879}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;background:#161b22}:not(pre)>code[class*=language-]{padding:.1em .3em;border-radius:.3em;color:#c9d1d9;background:#343942}pre[data-line]{position:relative}pre[class*=language-]>code[class*=language-]{position:relative;z-index:1}.line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:#2f2a1e;box-shadow:inset 5px 0 0 #674c16;z-index:0;pointer-events:none;line-height:inherit;white-space:pre}.namespace{opacity:.7}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8b949e}.token.punctuation{color:#c9d1d9}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#79c0ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a5d6ff}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#a5d6ff}.token.atrule,.token.attr-value,.token.keyword{color:#f97583}.token.function{color:#d2a8ff}.token.important,.token.regex,.token.variable{color:#79b8ff}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW9.ttf) format('truetype')}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:300;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype')}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype')}@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;src:url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype')}*{-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:none;-webkit-touch-callout:none;box-sizing:border-box}div#app{font-size:30px;font-weight:lighter;margin:40vh auto;text-align:center}div#app:empty:before{content:'Loading...'}.emoji{height:19.2px;height:1.2rem;vertical-align:middle}.progress{background-color:#42b983;background-color:var(--theme-color,#42b983);height:2px;left:0;position:fixed;right:0;top:0;transition:width .2s,opacity .4s;width:0;z-index:5}.search .search-keyword,.search a:hover{color:#42b983;color:var(--theme-color,#42b983)}.search .search-keyword{font-style:normal;font-weight:700}body,html{height:100%}body{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;color:#34495e;font-family:Source Sans Pro,Helvetica Neue,Arial,sans-serif;font-size:15px;letter-spacing:0;margin:0;overflow-x:hidden}img{max-width:100%}a[disabled]{cursor:not-allowed;opacity:.6}kbd{color:#34495e;border:1px solid #ccc;border-radius:3px;display:inline-block;font-size:12px!important;line-height:12px;margin-bottom:3px;padding:3px 5px;vertical-align:middle}.task-list-item{list-style-type:none}li input[type=checkbox]{margin:0 .2em .25em -1.6em;vertical-align:middle}.app-nav{left:0;margin:25px 60px 0 0;position:absolute;right:0;text-align:right;z-index:2}.app-nav p{margin:0}.app-nav>a{margin:0 16px;margin:0 1rem;padding:5px 0}.app-nav li,.app-nav ul{display:inline-block;list-style:none;margin:0}.app-nav a{color:inherit;font-size:16px;text-decoration:none;transition:color .3s}.app-nav a.active,.app-nav a:hover{color:#42b983;color:var(--theme-color,#42b983)}.app-nav a.active{border-bottom:2px solid #42b983;border-bottom:2px solid var(--theme-color,#42b983)}.app-nav li{display:inline-block;margin:0 16px;margin:0 1rem;padding:5px 0;position:relative}.app-nav li ul{background-color:#fff;border:1px solid #ddd;border-bottom-color:#ccc;border-radius:4px;box-sizing:border-box;display:none;max-height:calc(100vh - 61px);overflow-y:scroll;padding:10px 0;position:absolute;right:-15px;text-align:left;top:100%;white-space:nowrap}.app-nav li ul li{display:block;font-size:14px;line-height:16px;line-height:1rem;margin:0;margin:8px 14px;white-space:nowrap}.app-nav li ul a{display:block;font-size:inherit;margin:0;padding:0}.app-nav li ul a.active{border-bottom:0}.app-nav li:hover ul{display:block}.app-nav.no-badge{margin-right:25px}.github-corner{border-bottom:0;position:fixed;right:0;text-decoration:none;top:0;z-index:1}.github-corner svg{color:#fff;fill:#42b983;fill:var(--theme-color,#42b983);height:80px;width:80px}.github-corner:hover .octo-arm{-webkit-animation:a .56s ease-in-out;animation:a .56s ease-in-out}main{display:block;position:relative;width:100vw;height:100%;z-index:0}.anchor{display:inline-block;text-decoration:none;transition:all .3s}.anchor span{color:#34495e}.anchor:hover{text-decoration:underline}.sidebar{border-right:1px solid rgba(0,0,0,.07);overflow-y:auto;padding:40px 0 0;top:0;bottom:0;left:0;position:absolute;transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out;width:300px;z-index:3}.sidebar>h1{margin:0 auto 16px;margin:0 auto 1rem;font-size:24px;font-size:1.5rem;font-weight:300;text-align:center}.sidebar>h1 a{color:inherit;text-decoration:none}.sidebar>h1 .app-nav{display:block;position:static}.sidebar .sidebar-nav{line-height:2em;padding-bottom:40px}.sidebar ul{margin:0;padding:0}.sidebar li>p{font-weight:700;margin:0}.sidebar ul,.sidebar ul li{list-style:none}.sidebar ul li a{border-bottom:none;display:block}.sidebar ul li ul{padding-left:20px}.sidebar::-webkit-scrollbar{width:4px}.sidebar::-webkit-scrollbar-thumb{background:0 0;border-radius:4px}.sidebar:hover::-webkit-scrollbar-thumb{background:hsla(0,0%,53%,.4)}.sidebar:hover::-webkit-scrollbar-track{background:hsla(0,0%,53%,.1)}.sidebar-toggle{background-color:transparent;background-color:hsla(0,0%,100%,.8);border:0;outline:0;padding:10px;bottom:0;left:0;position:absolute;text-align:center;transition:opacity .3s;width:30px;width:284px;z-index:4}.sidebar-toggle .sidebar-toggle-button:hover{opacity:.4}.sidebar-toggle span{background-color:#42b983;background-color:var(--theme-color,#42b983);display:block;margin-bottom:4px;width:16px;height:2px}body.sticky .sidebar,body.sticky .sidebar-toggle{position:fixed}.content{padding-top:60px;top:0;right:0;bottom:0;left:300px;position:absolute;transition:left .25s ease}.markdown-preview>*{box-sizing:border-box;font-size:inherit}.markdown-preview>:first-child{margin-top:0!important}.markdown-preview hr{border:none;border-bottom:1px solid #eee;margin:2em 0}.markdown-preview table{border-collapse:collapse;border-spacing:0;display:block;margin-bottom:16px;margin-bottom:1rem;overflow:auto;width:100%}.markdown-preview th{font-weight:700}.markdown-preview td,.markdown-preview th{border:1px solid #ddd;padding:6px 13px}.markdown-preview tr{border-top:1px solid #ccc}.markdown-preview p.tip,.markdown-preview tr:nth-child(2n){background-color:#f8f8f8}.markdown-preview p.tip{border-bottom-right-radius:2px;border-left:4px solid #f66;border-top-right-radius:2px;margin:2em 0;padding:12px 24px 12px 30px;position:relative}.markdown-preview p.tip code{background-color:#efefef}.markdown-preview p.tip em{color:#34495e}.markdown-preview p.tip:before{background-color:#f66;border-radius:100%;color:#fff;content:'!';font-family:Dosis,Source Sans Pro,Helvetica Neue,Arial,sans-serif;font-size:14px;font-weight:700;left:-12px;line-height:20px;position:absolute;width:20px;height:20px;text-align:center;top:14px}.markdown-preview p.warn{background:rgba(66,185,131,.1);border-radius:2px;padding:16px;padding:1rem}body.close .sidebar{-webkit-transform:translateX(-300px);transform:translateX(-300px)}body.close .sidebar-toggle{width:auto}body.close .content{left:0}@media print{.app-nav,.github-corner,.sidebar,.sidebar-toggle{display:none}}@media screen and (max-width:768px){.github-corner,.sidebar,.sidebar-toggle{position:fixed}.app-nav{margin-top:16px}.app-nav li ul{top:30px}main{height:auto;overflow-x:hidden}.sidebar{left:-300px;transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out}.content{left:0;max-width:100vw;position:static;padding-top:20px;transition:-webkit-transform .25s ease;transition:transform .25s ease;transition:transform .25s ease,-webkit-transform .25s ease}.app-nav,.github-corner{transition:-webkit-transform .25s ease-out;transition:transform .25s ease-out;transition:transform .25s ease-out,-webkit-transform .25s ease-out}.sidebar-toggle{background-color:transparent;width:auto;padding:30px 30px 10px 10px}body.close .sidebar{-webkit-transform:translateX(300px);transform:translateX(300px)}body.close .sidebar-toggle{background-color:hsla(0,0%,100%,.8);transition:background-color 1s;width:284px;padding:10px}body.close .content{-webkit-transform:translateX(300px);transform:translateX(300px)}body.close .app-nav,body.close .github-corner{display:none}.github-corner .octo-arm{-webkit-animation:a .56s ease-in-out;animation:a .56s ease-in-out}.github-corner:hover .octo-arm{-webkit-animation:none;animation:none}}@-webkit-keyframes a{0%,to{-webkit-transform:rotate(0);transform:rotate(0)}20%,60%{-webkit-transform:rotate(-25deg);transform:rotate(-25deg)}40%,80%{-webkit-transform:rotate(10deg);transform:rotate(10deg)}}@keyframes a{0%,to{-webkit-transform:rotate(0);transform:rotate(0)}20%,60%{-webkit-transform:rotate(-25deg);transform:rotate(-25deg)}40%,80%{-webkit-transform:rotate(10deg);transform:rotate(10deg)}}section.cover{-webkit-box-align:center;-ms-flex-align:center;align-items:center;background-position:50%;background-repeat:no-repeat;background-size:cover;height:100vh;display:none}section.cover .cover-main{-webkit-box-flex:1;-ms-flex:1;flex:1;margin:-20px 16px 0;text-align:center;z-index:1}section.cover a{color:inherit}section.cover a,section.cover a:hover{text-decoration:none}section.cover p{line-height:24px;line-height:1.5rem;margin:1em 0}section.cover h1{color:inherit;font-size:40px;font-size:2.5rem;font-weight:300;margin:10px 0 40px;margin:.625rem 0 2.5rem;position:relative;text-align:center}section.cover h1 a{display:block}section.cover h1 small{bottom:-7px;bottom:-.4375rem;font-size:16px;font-size:1rem;position:absolute}section.cover blockquote{font-size:24px;font-size:1.5rem;text-align:center}section.cover ul{line-height:1.8;list-style-type:none;margin:1em auto;max-width:500px;padding:0}section.cover .cover-main>p:last-child a{border-color:#42b983;border:1px solid var(--theme-color,#42b983);border-radius:2rem;box-sizing:border-box;color:#42b983;color:var(--theme-color,#42b983);display:inline-block;font-size:16.8px;font-size:1.05rem;letter-spacing:1.6px;letter-spacing:.1rem;margin-right:16px;margin-right:1rem;padding:.75em 32px;padding:.75em 2rem;text-decoration:none;transition:all .15s ease}section.cover .cover-main>p:last-child a:last-child{background-color:#42b983;background-color:var(--theme-color,#42b983);color:#fff;margin-right:0}section.cover .cover-main>p:last-child a:last-child:hover{color:inherit;opacity:.8}section.cover .cover-main>p:last-child a:hover{color:inherit}section.cover blockquote>p>a{border-bottom:2px solid #42b983;border-bottom:2px solid var(--theme-color,#42b983);transition:color .3s}section.cover blockquote>p>a:hover{color:#42b983;color:var(--theme-color,#42b983)}section.cover.show{display:-webkit-box;display:-ms-flexbox;display:flex}section.cover.has-mask .mask{background-color:#fff;opacity:.8;position:absolute;width:100%;height:100%}.sidebar,body{background-color:#fff}.sidebar{color:#364149}.sidebar li{margin:6px 0 6px 15px}.sidebar ul li a{color:#505d6b;font-size:14px;font-weight:400;overflow:hidden;text-decoration:none;text-overflow:ellipsis;white-space:nowrap}.sidebar ul li a:hover{text-decoration:underline}.sidebar ul li ul{padding:0}.sidebar ul li.active>a{border-right:2px solid;color:#42b983;color:var(--theme-color,#42b983);font-weight:600}.app-sub-sidebar li:before{content:'-';padding-right:4px;float:left}.markdown-preview{background-color:#fff}.markdown-preview h1,.markdown-preview h2,.markdown-preview h3,.markdown-preview h4,.markdown-preview strong{color:#2c3e50;font-weight:600}.markdown-preview a{color:#42b983;color:var(--theme-color,#42b983);font-weight:600}.md-sidebar-toc a{color:#42b983;font-weight:600}.markdown-preview h1{font-size:32px;font-size:2rem;margin:0 0 16px;margin:0 0 1rem}.markdown-preview h2{font-size:28px;font-size:1.75rem;margin:45px 0 12.8px;margin:45px 0 .8rem}.markdown-preview h3{font-size:24px;font-size:1.5rem;margin:40px 0 9.6px;margin:40px 0 .6rem}.markdown-preview h4{font-size:20px;font-size:1.25rem}.markdown-preview h5,.markdown-preview h6{font-size:16px;font-size:1rem}.markdown-preview h6{color:#777}.markdown-preview figure,.markdown-preview p{margin:1.2em 0}.markdown-preview ol,.markdown-preview p,.markdown-preview ul{line-height:25.6px;line-height:1.6rem;word-spacing:.8px;word-spacing:.05rem}.markdown-preview ol,.markdown-preview ul{padding-left:24px;padding-left:1.5rem}.markdown-preview blockquote{border-left:4px solid #42b983;border-left:4px solid var(--theme-color,#42b983);color:#858585;background-color:#f0f0f0;margin:2em 0;padding-left:20px}.markdown-preview blockquote p{font-weight:600;margin-left:0}.markdown-preview iframe{margin:1em 0}.markdown-preview em{color:#7f8c8d}.markdown-preview {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.markdown-preview ul {
+	list-style: disc;
+}
+
+.markdown-preview ul ul {
+	list-style: circle;
+}
+
+.markdown-preview ul ul ul {
+	list-style: square;
+}
+
+.markdown-preview ol {
+	list-style: decimal;
+}
+
+.markdown-preview ol ol,
+.markdown-preview ul ol {
+	list-style-type: lower-roman;
+}
+
+.markdown-preview ol ol ol,
+.markdown-preview ol ul ol,
+.markdown-preview ul ol ol,
+.markdown-preview ul ul ol {
+	list-style-type: lower-alpha;
+}
+
+.markdown-preview .newpage,
+.markdown-preview .pagebreak {
+	page-break-before: always;
+}
+
+.markdown-preview pre.line-numbers {
+	position: relative;
+	padding-left: 3.8em;
+	counter-reset: linenumber;
+}
+
+.markdown-preview pre.line-numbers>code {
+	position: relative;
+}
+
+.markdown-preview pre.line-numbers .line-numbers-rows {
+	position: absolute;
+	pointer-events: none;
+	top: 1em;
+	font-size: 100%;
+	left: 0;
+	width: 3em;
+	letter-spacing: -1px;
+	border-right: 1px solid #999;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.markdown-preview pre.line-numbers .line-numbers-rows>span {
+	pointer-events: none;
+	display: block;
+	counter-increment: linenumber;
+}
+
+.markdown-preview pre.line-numbers .line-numbers-rows>span:before {
+	content: counter(linenumber);
+	color: #999;
+	display: block;
+	padding-right: .8em;
+	text-align: right;
+}
+
+.markdown-preview .mathjax-exps .MathJax_Display {
+	text-align: center !important;
+}
+
+.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group {
+	display: none;
+}
+
+.markdown-preview:not([data-for=preview]) .code-chunk .status {
+	display: none;
+}
+
+.markdown-preview:not([data-for=preview]) .code-chunk .output-div {
+	margin-bottom: 16px;
+}
+
+.markdown-preview .md-toc {
+	padding: 0;
+}
+
+.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link {
+	display: inline;
+	padding: .25rem 0;
+}
+
+.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,
+.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p {
+	display: inline;
+}
+
+.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link {
+	font-weight: 800;
+}
+
+.scrollbar-style::-webkit-scrollbar {
+	width: 8px;
+}
+
+.scrollbar-style::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+.scrollbar-style::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: rgba(150,150,150,.66);
+	border: 4px solid rgba(150,150,150,.66);
+	background-clip: content-box;
+}
+
+html body[for=html-export]:not([data-presentation-mode]) {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+}
+
+html body[for=html-export]:not([data-presentation-mode]) .markdown-preview {
+	position: relative;
+	top: 0;
+	min-height: 100vh;
+}
+
+@media screen and (min-width: 914px) {
+	html body[for=html-export]:not([data-presentation-mode]) .markdown-preview {
+		padding: 2em calc(50% - 457px + 2em);
+	}
+}
+
+@media screen and (max-width: 914px) {
+	html body[for=html-export]:not([data-presentation-mode]) .markdown-preview {
+		padding: 2em;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	html body[for=html-export]:not([data-presentation-mode]) .markdown-preview {
+		font-size: 14px !important;
+		padding: 1em;
+	}
+}
+
+@media print {
+	html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn {
+		display: none;
+	}
+}
+
+html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn {
+	position: fixed;
+	bottom: 8px;
+	left: 8px;
+	font-size: 28px;
+	cursor: pointer;
+	color: inherit;
+	z-index: 99;
+	width: 32px;
+	text-align: center;
+	opacity: .4;
+}
+
+html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn {
+	opacity: 1;
+}
+
+html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	padding: 32px 0 48px 0;
+	font-size: 14px;
+	box-shadow: 0 0 4px rgba(150,150,150,.33);
+	box-sizing: border-box;
+	overflow: auto;
+	background-color: inherit;
+}
+
+html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar {
+	width: 8px;
+}
+
+html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: rgba(150,150,150,.66);
+	border: 4px solid rgba(150,150,150,.66);
+	background-clip: content-box;
+}
+
+html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a {
+	text-decoration: none;
+}
+
+html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc {
+	padding: 0 16px;
+}
+
+html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link {
+	display: inline;
+	padding: .25rem 0;
+}
+
+html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,
+html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p {
+	display: inline;
+}
+
+html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link {
+	font-weight: 800;
+}
+
+html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+	left: 300px;
+	width: calc(100% - 300px);
+	padding: 2em calc(50% - 457px - 300px / 2);
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 1274px) {
+	html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+		padding: 2em;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+		width: 100%;
+	}
+}
+
+html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc {
+	display: none;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/caveat/v18/WnznHAc5bAfYB2QRah7pcpNvOx-pjfJ9SII.ttf) format('truetype');
+}
+body {
+  font-family: Lato, "宋体", "PingFang SC", "Microsoft YaHei", sans-serif !important;
+  line-height: 1.8;
+  font-weight: 500;
+  overflow-x: hidden;
+  letter-spacing: 1px;
+  color: #181818;
+  background-color: #fff;
+  text-align: justify;
+  word-break: break-word;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 914px) {
+  [for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+    padding: 2em calc(37% - 457px + 2em) !important;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+.markdown-preview {
+  background: -webkit-linear-gradient(top, transparent 19px, #efefef 20px), -webkit-linear-gradient(left, transparent 19px, #efefef 20px), #fff;
+  background-size: 20px 20px;
+  border-radius: 5px;
+  padding: 2em calc(34% - 536px + 2em);
+  box-sizing: border-box;
+  /* ----------------------- */
+  /* 左右分栏 （注意div内需要一个tab，否则会影响标题显示） */
+  /* ----------------------- */
+  /* ----------------------- */
+  /* ----------------------- */
+  /* 宽度100， */
+  /* 图片经过放大 */
+  /* ----------------------- */
+}
+.markdown-preview > :first-child {
+  margin-top: 0;
+}
+.markdown-preview h1,
+.markdown-preview h2,
+.markdown-preview h3,
+.markdown-preview h4,
+.markdown-preview h5,
+.markdown-preview h6 {
+  margin: 1.5em 0 0.5em;
+  font-weight: 600;
+  line-height: 1.3;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.markdown-preview h1 {
+  font-size: 22px;
+  color: #646464;
+  position: relative;
+  margin-bottom: 1.8em;
+  text-align: center;
+  border: 2px dotted #eeac00;
+  border-left: 0;
+  border-right: 0;
+  padding: 20px;
+  counter-reset: h2counter;
+}
+.markdown-preview h1::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 60px;
+  background: url(https://s1.ax1x.com/2023/03/14/pplcbWV.png);
+  background-size: cover;
+  z-index: -1;
+}
+.markdown-preview h2 {
+  font-size: 18px;
+  color: #eeac00;
+  counter-reset: h3counter;
+  border-left: 5px solid #555bff;
+}
+.markdown-preview h2:before {
+  counter-increment: h2counter;
+  content: counter(h2counter);
+  padding-right: 15px;
+}
+.markdown-preview h3 {
+  font-size: 17px;
+  color: #555bff;
+  counter-reset: h4counter;
+}
+.markdown-preview h3:before {
+  counter-increment: h3counter;
+  content: counter(h3counter);
+  content: counter(h2counter) "." counter(h3counter) " ";
+  padding-right: 15px;
+}
+.markdown-preview h4 {
+  font-size: 15px;
+  color: #5a5a5a;
+}
+.markdown-preview h4:before {
+  counter-increment: h4counter;
+  content: counter(h4counter);
+  content: "（" counter(h4counter) "）";
+  margin-left: -7px;
+  padding-right: 20px;
+}
+.markdown-preview h5 {
+  font-size: 15px;
+  color: #5a5a5a;
+}
+.markdown-preview h5:before {
+  counter-increment: h5counter;
+  content: counter(h5counter);
+  content: "" counter(h5counter) "）";
+  margin-left: 12px;
+  padding-right: 20px;
+}
+.markdown-preview strong {
+  color: #000000;
+  padding: 0 2px;
+}
+.markdown-preview table {
+  width: 100%;
+  border-top: 1.5pt solid #333;
+  border-bottom: 1.5pt solid #333;
+  margin: 1.5em 0;
+  border-collapse: collapse;
+  font-family: "Times New Roman", "Source Han Serif SC", serif;
+  color: #333;
+  page-break-inside: avoid;
+}
+.markdown-preview table caption {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 0.75em;
+  text-align: center;
+  color: #0d0d0d;
+}
+.markdown-preview table thead {
+  border-bottom: 0.75pt solid #333;
+}
+.markdown-preview table thead th {
+  font-weight: 600;
+  background-color: #fbfbfd;
+  padding: 12px 15px;
+  text-align: left;
+}
+.markdown-preview table thead th:first-child {
+  border-left: 1px solid rgba(51, 51, 51, 0.2);
+}
+.markdown-preview table tbody tr {
+  transition: background-color 0.2s ease;
+}
+.markdown-preview table tbody tr:hover {
+  background-color: rgba(85, 92, 190, 0.05);
+}
+.markdown-preview table tbody tr td {
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+  line-height: 1.6;
+}
+.markdown-preview table tbody tr td:first-child {
+  font-weight: 500;
+  color: #3e45a2;
+}
+.markdown-preview table tbody tr:last-child td {
+  border-bottom: none;
+}
+.markdown-preview table tfoot td {
+  padding: 12px 15px;
+  background-color: rgba(85, 92, 190, 0.08);
+  font-style: italic;
+}
+@media (max-width: 768px) {
+  .markdown-preview table {
+    font-size: 0.9em;
+  }
+  .markdown-preview table caption {
+    font-size: 1em;
+  }
+  .markdown-preview table th,
+  .markdown-preview table td {
+    padding: 8px 12px;
+  }
+}
+@media print {
+  .markdown-preview table {
+    border-color: #000 !important;
+  }
+  .markdown-preview table thead {
+    border-bottom-color: #000 !important;
+  }
+  .markdown-preview table tbody tr {
+    background-color: transparent !important;
+  }
+}
+.markdown-preview .table-striped tbody tr:nth-child(odd) {
+  background-color: rgba(85, 92, 190, 0.03);
+}
+.markdown-preview .table-condensed th,
+.markdown-preview .table-condensed td {
+  padding: 8px 12px !important;
+}
+.markdown-preview .table-condensed tfoot td {
+  padding: 6px 12px !important;
+}
+.markdown-preview strong,
+.markdown-preview .text-bold {
+  font-weight: 700;
+  color: #000000;
+}
+.markdown-preview em,
+.markdown-preview .text-italic {
+  font-style: italic;
+  color: #000000;
+}
+.markdown-preview u,
+.markdown-preview .text-underline {
+  text-decoration: underline;
+  text-decoration-color: #555cbe;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+}
+.markdown-preview del,
+.markdown-preview .text-strikethrough {
+  text-decoration: line-through;
+  text-decoration-color: #f10a5f;
+  text-decoration-thickness: 1.5px;
+}
+.markdown-preview code,
+.markdown-preview .text-code {
+  font-family: "Courier New", monospace;
+  background-color: #f8f8f8;
+  color: #d63384;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+.markdown-preview sup,
+.markdown-preview .text-superscript {
+  font-size: 0.8em;
+  vertical-align: super;
+}
+.markdown-preview sub,
+.markdown-preview .text-subscript {
+  font-size: 0.8em;
+  vertical-align: sub;
+}
+.markdown-preview .text-bold-italic {
+  font-weight: 700;
+  font-style: italic;
+}
+.markdown-preview .text-bold-underline {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: #555cbe;
+  text-decoration-thickness: 1.5px;
+}
+.markdown-preview .text-italic-strikethrough {
+  font-style: italic;
+  text-decoration: line-through;
+  text-decoration-color: #f10a5f;
+}
+.markdown-preview .text-code-bold {
+  font-family: "Courier New", monospace;
+  background-color: #f8f8f8;
+  color: #d63384;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+.markdown-preview .text-highlight {
+  background-color: #fff3cd;
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #9a7500;
+}
+.markdown-preview .text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.markdown-preview .text-gradient {
+  background: linear-gradient(to right, #555cbe, #42b983);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.markdown-preview .text-handwritten {
+  font-family: "Caveat", cursive;
+  font-size: 1.2em;
+  color: #333;
+}
+.markdown-preview img {
+  max-width: 100%;
+  border: 1px solid #f2f2f2;
+  border-left-color: #d9d9d9;
+  border-radius: 2px;
+  margin: 10px 3px 15px 0;
+  padding: 8px;
+  background-color: rgba(255, 255, 255, 0.79);
+  box-shadow: 5px 8px 9px -1px rgba(0, 0, 0, 0.03), 0 3px 5px 0 rgba(0, 0, 0, 0.03), 2px 3px 4px -1px rgba(0, 0, 0, 0.04);
+}
+.markdown-preview img[src*='img_5'] {
+  width: 49%;
+}
+.markdown-preview img[src*='img_3'] {
+  width: 33%;
+}
+.markdown-preview img[src*='img_7'] {
+  width: 70%;
+}
+.markdown-preview .bar_template {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  position: relative;
+  padding: 28px/2;
+  border-radius: 5px;
+}
+.markdown-preview .bar_template .label {
+  position: absolute;
+  left: 20px;
+  top: -15px;
+  color: white;
+  padding: 0px 6px 0px 6px;
+}
+.markdown-preview .bar_template:before {
+  position: absolute;
+  left: 20px;
+  top: -15px;
+  color: white;
+  padding: 0px 6px 0px 6px;
+}
+.markdown-preview .def {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  position: relative;
+  padding: 28px/2;
+  border-radius: 5px;
+  background-color: #f3e9de;
+  border-color: #e6d303;
+}
+.markdown-preview .def .label {
+  position: absolute;
+  left: 20px;
+  top: -15px;
+  color: white;
+  padding: 0px 6px 0px 6px;
+}
+.markdown-preview .def:before {
+  position: absolute;
+  left: 20px;
+  top: -15px;
+  color: white;
+  padding: 0px 6px 0px 6px;
+}
+.markdown-preview .def:before {
+  content: attr(name);
+  background-color: #d8b049;
+}
+.markdown-preview .thm {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  position: relative;
+  padding: 28px/2;
+  border-radius: 5px;
+  background-color: #b2f1ce;
+  border-color: #e6d303;
+}
+.markdown-preview .thm .label {
+  position: absolute;
+  left: 20px;
+  top: -15px;
+  color: white;
+  padding: 0px 6px 0px 6px;
+}
+.markdown-preview .thm:before {
+  position: absolute;
+  left: 20px;
+  top: -15px;
+  color: white;
+  padding: 0px 6px 0px 6px;
+}
+.markdown-preview .thm:before {
+  content: attr(name);
+  background-color: #42b51b;
+}
+.markdown-preview .pf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  position: relative;
+  padding: 28px/2;
+  border-radius: 5px;
+  background-color: aqua;
+  border-color: lightpink;
+}
+.markdown-preview .pf .label {
+  position: absolute;
+  left: 20px;
+  top: -15px;
+  color: white;
+  padding: 0px 6px 0px 6px;
+}
+.markdown-preview .pf:before {
+  position: absolute;
+  left: 20px;
+  top: -15px;
+  color: white;
+  padding: 0px 6px 0px 6px;
+}
+.markdown-preview .pf:before {
+  content: "证明";
+  color: white;
+  background-color: #4949ff;
+}
+.markdown-preview .pf:after {
+  content: "得证";
+  color: blue;
+}
+.markdown-preview .question {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid;
+  position: relative;
+  padding: 28px/2;
+  border-radius: 5px;
+  background-color: #fcd2d9;
+}
+.markdown-preview .question .label {
+  position: absolute;
+  left: 20px;
+  top: -15px;
+  color: white;
+  padding: 0px 6px 0px 6px;
+}
+.markdown-preview .question:before {
+  position: absolute;
+  left: 20px;
+  top: -15px;
+  color: white;
+  padding: 0px 6px 0px 6px;
+}
+.markdown-preview .question:before {
+  content: attr(name);
+  color: white;
+  background-color: #fa97a8;
+}
+.markdown-preview .wrap2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.markdown-preview .wrap2 .box {
+  width: 48%;
+}
+.markdown-preview .wrap2 .box:nth-child(1) {
+  padding-right: 2%;
+  border-right: 1px solid #ddd;
+}
+.markdown-preview .wrap2 .box.lit3 {
+  width: 30%;
+}
+.markdown-preview .wrap2 .box.lit7 {
+  width: 66%;
+}
+.markdown-preview .wrap2 .box.lit4 {
+  width: 35%;
+}
+.markdown-preview .wrap2 .box.lit6 {
+  width: 61%;
+}
+.markdown-preview .wrap2 .box > p:first-child,
+.markdown-preview .wrap2 .box > p:first-child em strong {
+  margin-top: 0;
+  padding-top: 0;
+}
+.markdown-preview .fix {
+  position: fixed;
+  width: 200px;
+  height: 35px;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+  border-radius: 4px;
+  outline: 5px solid #ffeead;
+  background-color: white;
+  border: 1px solid #d9534f;
+  box-sizing: border-box;
+  padding: 5px;
+  transition: height 1s 1s;
+  overflow: hidden;
+}
+.markdown-preview .fix > p,
+.markdown-preview .fix strong {
+  margin-top: 0;
+  padding-top: 0;
+}
+.markdown-preview .fix:hover {
+  height: 700px;
+  transition: all 1s 0s;
+  overflow: scroll;
+}
+.markdown-preview .tabb {
+  min-width: 100px;
+  display: inline-block;
+  color: #555cbe;
+}
+.markdown-preview img:hover {
+  animation: imgbig 0s linear 0.8s 1 normal forwards;
+}
+@keyframes imgbig {
+  100% {
+    height: 80%;
+    width: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+  }
+}
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/robotomono/v23/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdr.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/sourcesanspro/v22/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype');
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  box-sizing: border-box;
+}
+.markdown-preview code {
+  border-radius: 2px;
+  color: #6a2be0;
+  font-size: 16px;
+  margin: 0 2px;
+  padding: 3px 5px;
+  white-space: pre-wrap;
+}
+.markdown-preview code,
+.markdown-preview pre {
+  background-color: #f8f8f8;
+  font-family: Roboto Mono, Source Sans Pro, 'Microsoft YaHei', '微软雅黑';
+}
+.markdown-preview pre {
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
+  line-height: 24px;
+  line-height: 1.5rem;
+  margin: 1.2em 0;
+  overflow: auto;
+  padding: 0 22.4px;
+  padding: 0 1.4rem;
+  position: relative;
+  word-wrap: normal;
+}
+.token.cdata,
+.token.comment,
+.token.doctype,
+.token.prolog {
+  color: #898ac0;
+}
+.token.namespace {
+  color: #1625fdef !important;
+}
+.token.boolean,
+.token.number {
+  color: #d19a66 !important;
+}
+.token.punctuation {
+  color: #e44608 !important;
+}
+.token.property {
+  color: #dee033 !important;
+}
+.token.tag {
+  color: #1366b4 !important;
+}
+.token.string {
+  color: #98c376 !important;
+  color: var(--theme-color, #216949);
+}
+.token.selector {
+  color: #6679cc !important;
+}
+.token.attr-name {
+  color: #2973b7 !important;
+}
+.language-css .token.string,
+.style .token.string,
+.token.entity,
+.token.url {
+  color: #22a2c9 !important;
+}
+.token.attr-value,
+.token.control,
+.token.directive,
+.token.unit {
+  color: #42b983 !important;
+  color: var(--theme-color, #42b983);
+}
+.token.keyword {
+  color: #c678dd !important;
+}
+.token.atrule,
+.token.regex,
+.token.statement {
+  color: #22a2c9 !important;
+}
+.token.placeholder,
+.token.variable {
+  color: #3d8fd1 !important;
+}
+.token.deleted {
+  text-decoration: line-through;
+}
+.token.inserted {
+  border-bottom: 1px dotted #202746 !important;
+  text-decoration: none;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.bold,
+.token.important {
+  font-weight: 700;
+}
+.token.important {
+  color: #a9cec0 !important;
+}
+.token.entity {
+  cursor: help;
+}
+.markdown-preview pre > code {
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
+  background-color: #0c0d0e;
+  border-radius: 2px;
+  color: #d19a66;
+  display: block;
+  font-family: Roboto Mono, Source Sans Pro, 'Microsoft YaHei', '微软雅黑';
+  font-size: 15px !important;
+  font-size: 2rem;
+  line-height: 2em;
+  max-width: inherit;
+  overflow: inherit;
+  padding: 0.8em 1.4em;
+  white-space: pre;
+}
+.markdown-preview pre[class*="language"] {
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
+  background-color: #0c0d0e;
+  border-radius: 10px 10px ;
+  color: #d19a66;
+  display: block;
+  font-family: Roboto Mono, Source Sans Pro, 'Microsoft YaHei', '微软雅黑';
+  font-size: 15px !important;
+  font-size: 2rem;
+  line-height: 2em;
+  max-width: inherit;
+  overflow: inherit;
+  padding: 30px 1.4em 0px 30px !important;
+  white-space: pre;
+}
+.markdown-preview pre > code {
+  padding-left: 0;
+  padding-right: 0;
+}
+.markdown-preview code:after,
+.markdown-preview code:before {
+  letter-spacing: 0.8px;
+  letter-spacing: 0.05rem;
+}
+code .token {
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
+  min-height: 24px;
+  min-height: 1.5rem;
+}
+pre:after {
+  color: #ccc;
+  content: attr(data-lang);
+  font-size: 16px;
+  font-weight: 600;
+  height: 15px;
+  line-height: 15px;
+  padding: 5px 10px 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em !important;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: rgba(153, 122, 102, 0.08);
+  background: linear-gradient(to right, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+pre[data-line] .line-highlight:before,
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: 0.4em;
+  left: 0.6em;
+  min-width: 1em;
+  padding: 0 0.5em;
+  background-color: rgba(153, 122, 102, 0.4);
+  color: #f5f2f0;
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: 0.3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
+}
+pre:before {
+  content: " ";
+  position: absolute;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fc625d;
+  width: 12px;
+  height: 12px;
+  left: 10px;
+  top: 10px;
+  -webkit-box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  z-index: 2;
+}
+pre {
+  background: #21252b;
+  border-radius: 5px;
+  font: 15px/22px "Microsoft YaHei", Arial, Sans-Serif;
+  line-height: 1.4;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto ;
+  text-shadow: none;
+  color: #000;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.4);
+}
+pre code::-webkit-scrollbar {
+  height: 10x !important;
+  width: 10x !important;
+  background-color: #1d1f21 !important;
+}
+pre code::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 10px !important;
+  background-color: #21252b !important;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+pre code::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5) !important;
+  background-color: #21252b !important;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview {
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+[for="html-export"][html-show-sidebar-toc] .markdown-preview {
+  left: calc(50% + 150px) !important;
+  transform: translateX(-50%);
+}
+.md-sidebar-toc {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100vh;
+  background: #ffffff;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  overflow-y: auto;
+  padding: 20px 15px;
+}
+.md-sidebar-toc-active {
+  left: 0;
+}
+.md-sidebar-toc-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #3e45a2;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(85, 92, 190, 0.2);
+}
+.md-sidebar-toc::-webkit-scrollbar {
+  width: 6px;
+}
+.md-sidebar-toc::-webkit-scrollbar-thumb {
+  background-color: rgba(85, 92, 190, 0.3);
+  border-radius: 3px;
+}
+.md-sidebar-toc::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(85, 92, 190, 0.5);
+}
+.md-sidebar-toc .md-toc {
+  font-size: 14px;
+  line-height: 2em;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 5px 8px 9px -1px rgba(0, 0, 0, 0.03), 0 3px 5px 0 rgba(0, 0, 0, 0.03), 2px 3px 4px -1px rgba(0, 0, 0, 0.04);
+  padding: 4px 8px 4px 4px !important;
+}
+.md-sidebar-toc .md-toc > details:nth-child(1) > summary::before {
+  content: '《';
+}
+.md-sidebar-toc .md-toc > details:nth-child(1) > summary::after {
+  content: ' 》';
+  padding-right: 5px;
+}
+.md-sidebar-toc .md-toc > details > summary + div {
+  margin-right: 16px;
+}
+.md-sidebar-toc .md-toc-link-wrapper {
+  display: block;
+  padding-right: 20px;
+  list-style: none!important;
+  border-bottom: 0;
+  color: #555cbe;
+}
+.md-sidebar-toc .md-toc-link-wrapper a {
+  color: #007bff;
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  padding-right: 20px;
+  border-bottom: 0;
+}
+.md-sidebar-toc .md-toc-link-wrapper a:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+}
+.md-sidebar-toc .md-toc-link {
+  display: block;
+  padding: 8px 15px;
+  color: #4f4f4f;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+.md-sidebar-toc .md-toc-link:hover {
+  background-color: rgba(85, 92, 190, 0.08);
+  color: #3e45a2;
+}
+.md-sidebar-toc .md-toc-link-active {
+  background-color: rgba(85, 92, 190, 0.12);
+  color: #555cbe;
+  font-weight: 500;
+  position: relative;
+}
+.md-sidebar-toc .md-toc-link-active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 3px;
+  background: #555cbe;
+  border-radius: 2px;
+}
+ul ul .md-sidebar-toc .md-toc-link {
+  padding-left: 30px;
+  font-size: 0.95em;
+}
+@media screen and (min-width: 1024px) {
+  .md-sidebar-toc {
+    left: 0;
+  }
+  .md-sidebar-toc ~ .markdown-preview {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+  }
+}
+@media (max-width: 1023px) {
+  .sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    background: #555cbe;
+    color: #822a2a;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  .sidebar-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    backdrop-filter: blur(2px);
+  }
+}
+@media print {
+  .md-sidebar {
+    display: none;
+  }
+  .markdown-preview {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+@media print {
+  @page {
+    margin: 2.54cm 3.18cm !important;
+    size: A4;
+  }
+  .markdown-preview {
+    padding: 0 !important;
+    box-shadow: none;
+  }
+  .markdown-preview h1,
+  .markdown-preview h2,
+  .markdown-preview h3,
+  .markdown-preview h4,
+  .markdown-preview h5,
+  .markdown-preview h6 {
+    color: #000;
+    page-break-after: avoid;
+  }
+  .text-gradient {
+    color: #555cbe !important;
+  }
+}
+@media (max-width: 768px) {
+  strong,
+  .text-bold {
+    font-weight: 600;
+  }
+  code,
+  .text-code {
+    font-size: 0.85em;
+    padding: 1px 4px;
+  }
+  .text-gradient {
+    font-size: 1.1em;
+  }
+}
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+
+<!-- <head>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  </head> --></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      <div>
+<h1 id="markdown制作幻灯片">Markdown制作幻灯片</h1>
+<h2 id="环境准备">娄 环 星 境 驰 准 备</h2>
+<h3 id="this-is-31">this is 3.1</h3>
+<h3 id="tish-is-32">tish is 3.2</h3>
+<h4 id="this-is-4">this is 4</h4>
+<h5 id="this-is-5">this is 5</h5>
+<blockquote>
+<p><code>vscode + EMP + pandoc 3.5 + pandoc-crossref</code></p>
+</blockquote>
+<h2 id="基本语法">基本语法</h2>
+<h1 id="my_id">这个标题拥有 1 个 id</h1>
+<pre class="text language-text language-markdown markdown" data-role="codeBlock" data-info="markdown"><code><span class="token title important"><span class="token punctuation">#</span> 这个标题拥有 1 个 id {#my_id}</span></code></pre>
+<h1 class="class1 class2" id="这个标题有-2-个-classes">这个标题有 2 个
+classes</h1>
+<pre class="text language-text language-markdown markdown" data-role="codeBlock" data-info="markdown"><code><span class="token title important"><span class="token punctuation">#</span> 这个标题有 2 个 classes {.class1 .class2}</span></code></pre>
+<h2 id="代码实例">代码实例</h2>
+<pre class="text language-text" data-role="codeBlock" data-info="text"><code>*这会是 斜体 的文字*
+_这会是 斜体 的文字_
+
+**这会是 粗体 的文字**
+__这会是 粗体 的文字__
+
+_你也 **组合** 这些符号_
+
+~~这个文字将会被横线删除~~</code></pre>
+<h2 id="结果输出">结果输出</h2>
+<p><em>这会是 斜体 的文字</em> <em>这会是 斜体 的文字</em></p>
+<p><strong>这会是 粗体 的文字</strong> <strong>这会是 粗体
+的文字</strong></p>
+<p><em>你也 <strong>组合</strong> 这些符号</em></p>
+<p><del>这个文字将会被横线删除</del></p>
+<p>上标：X<sub>2</sub>，下标：O<sup>2</sup></p>
+<p><strong>缩写(同HTML的abbr标签)</strong></p>
+<blockquote>
+<p>即更长的单词或短语的缩写形式，前提是开启识别HTML标签时，已默认开启</p>
+</blockquote>
+<h3 id="引用-blockquotes">引用 Blockquotes</h3>
+<blockquote>
+<p>引用文本 Blockquotes</p>
+</blockquote>
+<p>引用的行内混合 Blockquotes</p>
+<blockquote>
+<p>引用：如果想要插入空白换行<code>即&lt;br /&gt;标签</code>，在插入处先键入两个以上的空格然后回车即可</p>
+</blockquote>
+<h3 id="锚点与链接-links">锚点与链接 Links</h3>
+<p><a href="http://baidu.com/">普通链接</a></p>
+<p><a href="http://baidu.com/" title="普通链接带标题">普通链接带标题</a></p>
+<p>直接链接：&lt;https: //github.com&gt;</p>
+<p><a href="mailto:test.test@gmail.com">mailto:test.test@gmail.com</a></p>
+<p>GFM a-tail link <span class="citation" data-cites="pandao">[@pandao]</span> 邮箱地址自动链接
+test.test@gmail.com www@vip.qq.com</p>
+<blockquote>
+<p><span class="citation" data-cites="pandao">[@pandao]</span></p>
+</blockquote>
+<h3 id="多语言代码高亮-codes">多语言代码高亮 Codes</h3>
+<h4 id="行内代码-inline-code">行内代码 Inline code</h4>
+<p>执行命令：<code>npm install marked</code></p>
+<h4 id="缩进风格">缩进风格</h4>
+<p>即缩进四个空格，也做为实现类似 <code>&lt;pre&gt;</code> 预格式化文本
+( Preformatted Text ) 的功能。</p>
+<pre class="language-text">&lt;?php
+    echo "Hello world!";
+?&gt;</pre>
+<p>预格式化文本：</p>
+<pre class="language-text">| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |</pre>
+<h4 id="js代码">JS代码</h4>
+<pre class="text language-text language-javascript javascript" data-role="codeBlock" data-info="javascript"><code><span class="token keyword keyword-function">function</span> <span class="token function">test</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">"Hello world!"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">(</span><span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword keyword-var">var</span> <span class="token function-variable function">box</span> <span class="token operator">=</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword control-flow keyword-return">return</span> box<span class="token punctuation">.</span><span class="token property-access">fn</span><span class="token punctuation">.</span><span class="token method function property-access">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    box<span class="token punctuation">.</span><span class="token property-access">prototype</span> <span class="token operator">=</span> box<span class="token punctuation">.</span><span class="token property-access">fn</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token function-variable function">init</span> <span class="token operator">:</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token console class-name">console</span><span class="token punctuation">.</span><span class="token method function property-access">log</span><span class="token punctuation">(</span><span class="token string">'box.init()'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword control-flow keyword-return">return</span> <span class="token keyword keyword-this">this</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">add</span> <span class="token operator">:</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"add"</span><span class="token punctuation">,</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword control-flow keyword-return">return</span> <span class="token keyword keyword-this">this</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">remove</span> <span class="token operator">:</span> <span class="token keyword keyword-function">function</span><span class="token punctuation">(</span><span class="token parameter">str</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">"remove"</span><span class="token punctuation">,</span> str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword control-flow keyword-return">return</span> <span class="token keyword keyword-this">this</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    box<span class="token punctuation">.</span><span class="token property-access">fn</span><span class="token punctuation">.</span><span class="token property-access">init</span><span class="token punctuation">.</span><span class="token property-access">prototype</span> <span class="token operator">=</span> box<span class="token punctuation">.</span><span class="token property-access">fn</span><span class="token punctuation">;</span>
+    <span class="token dom variable">window</span><span class="token punctuation">.</span><span class="token property-access">box</span> <span class="token operator">=</span>box<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword keyword-var">var</span> testBox <span class="token operator">=</span> <span class="token function">box</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+testBox<span class="token punctuation">.</span><span class="token method function property-access">add</span><span class="token punctuation">(</span><span class="token string">"jQuery"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token method function property-access">remove</span><span class="token punctuation">(</span><span class="token string">"jQuery"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h4 id="html-代码-html-codes">HTML 代码 HTML codes</h4>
+<pre class="text language-text language-html html" data-role="codeBlock" data-info="html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mate</span> <span class="token attr-name">charest</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>keywords<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Editor.md, Markdown, Editor<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Hello world!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text/css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+    <span class="token selector">body</span> <span class="token punctuation">{</span>
+        <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">14</span><span class="token unit">px</span><span class="token punctuation">;</span>
+        <span class="token property">color</span><span class="token punctuation">:</span> <span class="token hexcode color">#444</span><span class="token punctuation">;</span>
+        <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">"Microsoft Yahei"</span><span class="token punctuation">,</span> Tahoma<span class="token punctuation">,</span> <span class="token string">"Hiragino Sans GB"</span><span class="token punctuation">,</span> Arial<span class="token punctuation">;</span>
+        <span class="token property">background</span><span class="token punctuation">:</span> <span class="token hexcode color">#fff</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">ul</span> <span class="token punctuation">{</span>
+        <span class="token property">list-style</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token selector">img</span> <span class="token punctuation">{</span>
+        <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+        <span class="token property">vertical-align</span><span class="token punctuation">:</span> middle<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-xxl<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Hello world!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-green<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Plain text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
+<h3 id="图片-images">图片 Images</h3>
+<p>Image:</p>
+<figure>
+<img src="https://pandao.github.io/editor.md/examples/images/4.jpg" alt="am">
+<figcaption aria-hidden="true">am</figcaption>
+</figure>
+<blockquote>
+<p>Follow your heart.</p>
+</blockquote>
+<figure>
+<img src="https://pandao.github.io/editor.md/examples/images/8.jpg" alt="am">
+<figcaption aria-hidden="true">am</figcaption>
+</figure>
+<blockquote>
+<p>图为：厦门白城沙滩</p>
+</blockquote>
+<p>图片加链接 (Image + Link)：</p>
+<p>[<img src="https://pandao.github.io/editor.md/examples/images/7.jpg" alt="am">] “李健首张专辑《似水流年》封面”</p>
+<blockquote>
+<p>图为：李健首张专辑《似水流年》封面</p>
+</blockquote>
+<h3 id="列表-lists">列表 Lists</h3>
+<h4 id="无序列表减号unordered-lists--">无序列表（减号）Unordered Lists
+(-)</h4>
+<ul>
+<li>列表一</li>
+<li>列表二</li>
+<li>列表三</li>
+</ul>
+<h4 id="无序列表星号unordered-lists-无序列表星号unordered-lists-">无序列表（星号）Unordered
+Lists (*) {#无序列表星号unordered-lists- }</h4>
+<ul>
+<li>列表一</li>
+<li>列表二</li>
+<li>列表三</li>
+</ul>
+<h4 id="无序列表加号和嵌套unordered-lists-">无序列表（加号和嵌套）Unordered
+Lists (+)</h4>
+<ul>
+<li>列表一</li>
+<li>列表二
+<ul>
+<li>列表二-1</li>
+<li>列表二-2</li>
+<li>列表二-3</li>
+</ul></li>
+<li>列表三
+<ul>
+<li>列表一</li>
+<li>列表二</li>
+<li>列表三</li>
+</ul></li>
+</ul>
+<h4 id="有序列表-ordered-lists--">有序列表 Ordered Lists (-)</h4>
+<ol type="1">
+<li>第一行</li>
+<li>第二行</li>
+<li>第三行</li>
+</ol>
+<h4 id="gfm-task-list">GFM task list</h4>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked=""> GFM
+task list 1</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked=""> GFM
+task list 2</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> GFM task
+list 3
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> GFM task
+list 3-1</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> GFM task
+list 3-2</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> GFM task
+list 3-3</li>
+</ul></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> GFM task
+list 4
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> GFM task
+list 4-1</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> GFM task
+list 4-2</li>
+</ul></li>
+</ul>
+<h3 id="绘制三线表格-tables">绘制三线表格 Tables</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th style="text-align: right;">价格</th>
+<th style="text-align: center;">数量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>计算机</td>
+<td style="text-align: right;">$1600</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td style="text-align: right;">$12</td>
+<td style="text-align: center;">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td style="text-align: right;">$1</td>
+<td style="text-align: center;">234</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Function name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>help()</code></td>
+<td>Display the help window.</td>
+</tr>
+<tr>
+<td><code>destroy()</code></td>
+<td><strong>Destroy your computer!</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Left-Aligned</th>
+<th style="text-align: center;">Center Aligned</th>
+<th style="text-align: right;">Right Aligned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">col 3 is</td>
+<td style="text-align: center;">some wordy text</td>
+<td style="text-align: right;">$1600</td>
+</tr>
+<tr>
+<td style="text-align: left;">col 2 is</td>
+<td style="text-align: center;">centered</td>
+<td style="text-align: right;">$12</td>
+</tr>
+<tr>
+<td style="text-align: left;">zebra stripes</td>
+<td style="text-align: center;">are neat</td>
+<td style="text-align: right;">$1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Computer</td>
+<td style="text-align: right;">$1600</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td style="text-align: right;">$12</td>
+</tr>
+<tr>
+<td>Pipe</td>
+<td style="text-align: right;">$1</td>
+</tr>
+</tbody>
+</table>
+<h4 id="特殊符号-html-entities-codes">特殊符号 HTML Entities Codes</h4>
+<p>© &amp; ¨ ™ ¡ £ &amp; &lt; &gt; ¥ € ® ± ¶ § ¦ ¯ « ·</p>
+<p>X² Y³ ¾ ¼ × ÷ »</p>
+<p>18ºC ” ’</p>
+<h4 id="反斜杠-escape">反斜杠 Escape</h4>
+<p>*literal asterisks*</p>
+<h3 id="科学公式-texkatex">科学公式 TeX(KaTeX)</h3>
+<p><span class="math display">E=mc^2</span></p>
+<p>行内的公式<span class="math display">E=mc^2</span>行内的公式，行内的<span class="math display">E=mc^2</span>公式。</p>
+<p><span class="math display">x &gt; y</span></p>
+<p>多行公式：</p>
+<p class="math"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><msup><mrow><mo fence="true">(</mo><mo>∑</mo><mi mathvariant="normal">_</mi><msup><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msup><mi>a</mi><mi mathvariant="normal">_</mi><mi>k</mi><mi>b</mi><mi mathvariant="normal">_</mi><mi>k</mi><mo fence="true">)</mo></mrow><mn>2</mn></msup><mo>≤</mo><mrow><mo fence="true">(</mo><mo>∑</mo><mi mathvariant="normal">_</mi><msup><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msup><mi>a</mi><mi mathvariant="normal">_</mi><msup><mi>k</mi><mn>2</mn></msup><mo fence="true">)</mo></mrow><mrow><mo fence="true">(</mo><mo>∑</mo><mi mathvariant="normal">_</mi><msup><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msup><mi>b</mi><mi mathvariant="normal">_</mi><msup><mi>k</mi><mn>2</mn></msup><mo fence="true">)</mo></mrow></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle
+\left( \sum\_{k=1}^n a\_k b\_k \right)^2
+\leq
+\left( \sum\_{k=1}^n a\_k^2 \right)
+\left( \sum\_{k=1}^n b\_k^2 \right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.004em;vertical-align:-0.65em;"></span><span class="minner"><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size2">(</span></span><span class="mop op-symbol large-op" style="position:relative;top:0em;">∑</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7487em;"><span style="top:-3.1473em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mord mathnormal">a</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal">kb</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size2">)</span></span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.354em;"><span style="top:-3.6029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.8em;vertical-align:-0.65em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size2">(</span></span><span class="mop op-symbol large-op" style="position:relative;top:0em;">∑</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7487em;"><span style="top:-3.1473em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mord mathnormal">a</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size2">)</span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;"><span class="delimsizing size2">(</span></span><span class="mop op-symbol large-op" style="position:relative;top:0em;">∑</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord"><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7487em;"><span style="top:-3.1473em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mord mathnormal">b</span><span class="mord" style="margin-right:0.02778em;">_</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose delimcenter" style="top:0em;"><span class="delimsizing size2">)</span></span></span></span></span></span></span></p>
+<pre class="text language-text language-katex katex" data-role="codeBlock" data-info="katex"><code>\displaystyle 
+    \frac{1}{
+        \Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{
+        \frac25 \pi}} = 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {
+        1+\frac{e^{-6\pi}}
+        {1+\frac{e^{-8\pi}}
+         {1+\cdots} }
+        } 
+    }</code></pre>
+<pre class="text language-text language-latex latex" data-role="codeBlock" data-info="latex"><code>f(x) = <span class="token function selector">\int</span>_<span class="token punctuation">{</span>-<span class="token function selector">\infty</span><span class="token punctuation">}</span>^<span class="token function selector">\infty</span>
+    <span class="token function selector">\hat</span> f(<span class="token function selector">\xi</span>)<span class="token function selector">\,</span>e^<span class="token punctuation">{</span>2 <span class="token function selector">\pi</span> i <span class="token function selector">\xi</span> x<span class="token punctuation">}</span>
+    <span class="token function selector">\,</span>d<span class="token function selector">\xi</span></code></pre>
+<h3 id="绘制流程图-flowchart">绘制流程图 Flowchart</h3>
+<pre class="text language-text language-flow flow" data-role="codeBlock" data-info="flow"><code>st<span class="token operator">=&gt;</span>start<span class="token operator">:</span> 用户登陆
+op<span class="token operator">=&gt;</span>operation<span class="token operator">:</span> 登陆操作
+cond<span class="token operator">=&gt;</span>condition<span class="token operator">:</span> 登陆成功 Yes or No<span class="token operator">?</span>
+e<span class="token operator">=&gt;</span>end<span class="token operator">:</span> 进入后台
+
+st<span class="token operator">-</span><span class="token operator">&gt;</span>op<span class="token operator">-</span><span class="token operator">&gt;</span>cond
+<span class="token function">cond</span><span class="token punctuation">(</span>yes<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span>e
+<span class="token function">cond</span><span class="token punctuation">(</span>no<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">&gt;</span>op</code></pre>
+<h3 id="绘制序列图-sequence-diagram">绘制序列图 Sequence Diagram</h3>
+<pre class="text language-text language-seq seq" data-role="codeBlock" data-info="seq"><code>Andrew-&gt;China: Says Hello 
+Note right of China: China thinks\nabout it 
+China--&gt;Andrew: How are you? 
+Andrew-&gt;&gt;China: I am good thanks!</code></pre>
+<h3 id="列表">列表</h3>
+<h4 id="无序列表">无序列表</h4>
+<ul>
+<li>Item 1</li>
+<li>Item 2
+<ul>
+<li>Item 2a</li>
+<li>Item 2b #### 有序列表 {#有序列表 }</li>
+</ul></li>
+</ul>
+<ol type="1">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3
+<ol type="1">
+<li>Item 3a</li>
+<li>Item 3b</li>
+</ol></li>
+</ol>
+<h3 id="环境准备-1">环境准备</h3>
+<h4 id="visual-studio-code-编辑器安装">Visual Studio Code
+编辑器安装</h4>
+<h4 id="markdown-preview-enhanced-扩展安装">Markdown Preview Enhanced
+扩展安装</h4>
+<h4 id="pandoc安装">Pandoc安装</h4>
+<p><code>scoop</code></p>
+<h3 id="基本语法-1">基本语法</h3>
+<pre class="text language-text language-markdown Markdown" data-role="codeBlock" data-info="Markdown"><code><span class="token title important"><span class="token punctuation">#</span> 一级标题</span>
+<span class="token title important"><span class="token punctuation">##</span> 二级标题</span>
+<span class="token title important"><span class="token punctuation">###</span> 三级标题</span>
+<span class="token title important"><span class="token punctuation">####</span> 四级标题</span>
+<span class="token title important"><span class="token punctuation">#####</span> 五级标题</span>
+<span class="token title important"><span class="token punctuation">######</span> 六级标题</span>
+正文</code></pre>
+<h4 id="markdown-基本语法">Markdown 基本语法</h4>
+<pre class="text language-text language-markdown Markdown" data-role="codeBlock" data-info="Markdown"><code><span class="token blockquote punctuation">&gt;</span> 这里是引用</code></pre>
+<h4 id="markdown-基本语法-1">Markdown 基本语法</h4>
+<pre class="text language-text language-markdown Markdown" data-role="codeBlock" data-info="Markdown"><code><span class="token title important"><span class="token punctuation">####</span> 表格</span>
+<span class="token table"><span class="token table-header-row"><span class="token punctuation">|</span><span class="token table-header important"> 实验组 </span><span class="token punctuation">|</span><span class="token table-header important"> 时间  </span><span class="token punctuation">|</span><span class="token table-header important">   数量 </span><span class="token punctuation">|</span>
+</span><span class="token table-line"><span class="token punctuation">|</span> <span class="token punctuation">:-----</span> <span class="token punctuation">|</span> <span class="token punctuation">:---:</span> <span class="token punctuation">|</span> <span class="token punctuation">-----:</span> <span class="token punctuation">|</span>
+</span><span class="token table-data-rows"><span class="token punctuation">|</span><span class="token table-data"> M1     </span><span class="token punctuation">|</span><span class="token table-data">  1h   </span><span class="token punctuation">|</span><span class="token table-data"> 120000 </span><span class="token punctuation">|</span>
+<span class="token punctuation">|</span><span class="token table-data"> M2     </span><span class="token punctuation">|</span><span class="token table-data">  2h   </span><span class="token punctuation">|</span><span class="token table-data"> 140000 </span><span class="token punctuation">|</span>
+<span class="token punctuation">|</span><span class="token table-data"> M3     </span><span class="token punctuation">|</span><span class="token table-data">  3h   </span><span class="token punctuation">|</span><span class="token table-data"> 160000 </span><span class="token punctuation">|</span></span></span></code></pre>
+<pre class="text language-text language-markdown Markdown" data-role="codeBlock" data-info="Markdown"><code><span class="token title important"><span class="token punctuation">####</span> 下面是分割线</span>
+<span class="token hr punctuation">***</span>
+<span class="token title important">#### 下面也是分割线
+<span class="token punctuation">---</span></span></code></pre>
+<pre class="text language-text language-markdown Markdown" data-role="codeBlock" data-info="Markdown"><code>
+<span class="token title important"><span class="token punctuation">####</span> 块内公式</span>
+
+$$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+
+<span class="token title important"><span class="token punctuation">####</span> 行内公式</span>
+
+$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$</code></pre>
+<h4 id="mpe-幻灯片分割">MPE 幻灯片分割</h4>
+<pre class="text language-text language-markdown Markdown" data-role="codeBlock" data-info="Markdown"><code>
+<span class="token title important"><span class="token punctuation">#</span> Hi here</span>
+
+let us go
+
+Thank you!</code></pre>
+<h1 id="thank-you">Thank you!</h1>
+</div>
+      </div>
+      <div class="md-sidebar-toc">
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#markdown制作幻灯片" class="md-toc-link"><p>Markdown制作幻灯片</p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#环境准备" class="md-toc-link"><p>环境准备</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#this-is-31" class="md-toc-link">
+            <p>this is 3.1</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#tish-is-32" class="md-toc-link"><p>tish is 3.2</p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#this-is-4" class="md-toc-link"><p>this is 4</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#this-is-5" class="md-toc-link">
+            <p>this is 5</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#基本语法" class="md-toc-link">
+            <p>基本语法</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#my_id" class="md-toc-link">
+            <p>这个标题拥有 1 个 id</p>
+
+          </a></div><details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#这个标题有-2-个-classes" class="md-toc-link"><p>这个标题有 2 个 classes</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#代码实例" class="md-toc-link">
+            <p>代码实例</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#结果输出" class="md-toc-link"><p>结果输出</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#引用-blockquotes" class="md-toc-link">
+            <p>引用 Blockquotes</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#锚点与链接-links" class="md-toc-link">
+            <p>锚点与链接 Links</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#多语言代码高亮-codes" class="md-toc-link"><p>多语言代码高亮 Codes</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#行内代码-inline-code" class="md-toc-link">
+            <p>行内代码 Inline code</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#缩进风格" class="md-toc-link">
+            <p>缩进风格</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#js代码" class="md-toc-link">
+            <p>JS代码</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#html-代码-html-codes" class="md-toc-link">
+            <p>HTML 代码 HTML codes</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#图片-images" class="md-toc-link">
+            <p>图片 Images</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#列表-lists" class="md-toc-link"><p>列表 Lists</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#无序列表减号unordered-lists--" class="md-toc-link">
+            <p>无序列表（减号）Unordered Lists (-)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#无序列表星号unordered-lists-" class="md-toc-link">
+            <p>无序列表（星号）Unordered Lists (*)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#无序列表加号和嵌套unordered-lists-" class="md-toc-link">
+            <p>无序列表（加号和嵌套）Unordered Lists (+)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#有序列表-ordered-lists--" class="md-toc-link">
+            <p>有序列表 Ordered Lists (-)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#gfm-task-list" class="md-toc-link">
+            <p>GFM task list</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#绘制三线表格-tables" class="md-toc-link"><p>绘制三线表格 Tables</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#特殊符号-html-entities-codes" class="md-toc-link">
+            <p>特殊符号 HTML Entities Codes</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#反斜杠-escape" class="md-toc-link">
+            <p>反斜杠 Escape</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#科学公式-texkatex" class="md-toc-link">
+            <p>科学公式 TeX(KaTeX)</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#绘制流程图-flowchart" class="md-toc-link">
+            <p>绘制流程图 Flowchart</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#绘制序列图-sequence-diagram" class="md-toc-link">
+            <p>绘制序列图 Sequence Diagram</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#列表" class="md-toc-link"><p>列表</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#无序列表" class="md-toc-link">
+            <p>无序列表</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#有序列表" class="md-toc-link">
+            <p>有序列表</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#环境准备-1" class="md-toc-link"><p>环境准备</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#visual-studio-code-编辑器安装" class="md-toc-link">
+            <p>Visual Studio Code 编辑器安装</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#markdown-preview-enhanced-扩展安装" class="md-toc-link">
+            <p>Markdown Preview Enhanced 扩展安装</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#pandoc安装" class="md-toc-link">
+            <p>Pandoc安装</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#基本语法-1" class="md-toc-link"><p>基本语法</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#markdown-基本语法" class="md-toc-link">
+            <p>Markdown 基本语法</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#markdown-基本语法-1" class="md-toc-link">
+            <p>Markdown 基本语法</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#mpe-幻灯片分割" class="md-toc-link">
+            <p>MPE 幻灯片分割</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:18px">
+          <a href="#thank-you" class="md-toc-link">
+            <p>Thank you!</p>
+
+          </a></div>
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
