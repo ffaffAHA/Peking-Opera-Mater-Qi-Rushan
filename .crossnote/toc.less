@@ -1,0 +1,84 @@
+/* 侧栏 */
+.md-sidebar-toc {
+  background-color: #eeeeee;
+  /*背景颜色*/
+}
+
+.md-sidebar-toc li {
+  font-size: 0.8rem !important;
+  /*字号*/
+  margin-bottom: 0 !important;
+  text-align: left;
+  /*左对齐*/
+}
+
+.md-sidebar-toc ul li {
+  font-weight: bold;
+  /*一级大纲*/
+}
+
+.md-sidebar-toc ul ul {
+  padding-left: 0pt !important;
+  padding-right: 0 !important;
+  margin-top: 2pt !important;
+  margin-bottom: 2pt !important;
+}
+
+.md-sidebar-toc ul ul li {
+  margin-bottom: 8pt !important;
+  margin-top: 8pt !important;
+}
+
+.md-sidebar-toc ul ul ul {
+  padding-left: 8pt !important;
+}
+
+.md-sidebar-toc ul ul ul li {
+  font-weight: normal;
+  margin-top: 2pt !important;
+  margin-bottom: 2pt !important;
+}
+
+/* 侧栏自动编号 */
+/* 复位计数器 */
+body {
+  counter-reset: outline-h2 0 outline-h3 0 outline-h4 0 outline-h5 0
+}
+
+.md-sidebar-toc ul li {
+  counter-reset: outline-h2;
+}
+
+.md-sidebar-toc ul ul li {
+  counter-reset: outline-h3;
+}
+
+.md-sidebar-toc ul ul ul li {
+  counter-reset: outline-h4;
+}
+
+.md-sidebar-toc ul ul ul ul li {
+  counter-reset: outline-h5;
+}
+
+/* 进行编号 */
+
+.md-sidebar-toc ul ul li:before {
+  counter-increment: outline-h2;
+  content: counter(outline-h2) " ";
+}
+
+.md-sidebar-toc ul ul ul li:before {
+  counter-increment: outline-h3;
+  content: counter(outline-h2) "."counter(outline-h3) " ";
+}
+
+.md-sidebar-toc ul ul ul ul li:before {
+  counter-increment: outline-h4;
+  content: counter(outline-h2) "."counter(outline-h3) "."counter(outline-h4) " ";
+}
+
+.md-sidebar-toc ul ul ul ul ul li:before {
+  counter-increment: outline-h4;
+  content: counter(outline-h2) "."counter(outline-h3) "."counter(outline-h4) "."counter(outline-h5) " ";
+}

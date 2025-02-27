@@ -1,0 +1,438 @@
+/* ----------------------- */
+
+/* 代码样式 */
+pre {
+  /* 书写方向，从左到右 */
+  direction: ltr;
+  text-align: left;
+  /* 连续的空白符会被保留。在遇到换行符或者<br>元素时才会换行 */
+  white-space: pre;
+  /* 单词间距 */
+  word-spacing: normal;
+  word-break: normal;
+  overflow: auto;
+  line-height: 1.65;
+  tab-size: 4;
+  /* 换行方式，单词内有建议换行点也不会在那里换行。只会在空白符处换行 */
+  hyphens: none;
+  /* color: #555; */
+  font-size: 14px;
+  color: #0037ff;
+  background-color: #fff;
+  padding: 15px 1.25em 15px;
+  margin: -10px 0 30px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  box-shadow: 5px 8px 9px -1px rgb(0 0 0 / 3%),
+      0 3px 5px 0 rgb(0 0 0 / 3%),
+      2px 3px 4px -1px rgb(0 0 0 / 4%);
+
+
+
+  &[data-line] {
+      position: relative;
+      padding: 1em 0 1em 3em
+  }
+
+  &[data-line] .line-highlight-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      display: block;
+      width: 100%
+  }
+
+  &[data-line] .line-highlight {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: inherit 0;
+      margin-top: 1em;
+      background: rgba(153, 122, 102, 0.08);
+      background: linear-gradient(to right, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+      pointer-events: none;
+      line-height: inherit;
+      white-space: pre
+  }
+
+  &[data-line] .line-highlight:before,
+  &[data-line] .line-highlight[data-end]:after {
+      content: attr(data-start);
+      position: absolute;
+      top: .4em;
+      left: .6em;
+      min-width: 1em;
+      padding: 0 .5em;
+      background-color: rgba(153, 122, 102, 0.4);
+      color: #f5f2f0;
+      font: bold 65%/1.5 sans-serif;
+      text-align: center;
+      vertical-align: .3em;
+      border-radius: 999px;
+      text-shadow: none;
+      box-shadow: 0 1px white
+  }
+
+  &[data-line] .line-highlight[data-end]:after {
+      content: attr(data-end);
+      top: auto;
+      bottom: .4em
+  }
+}
+
+/* 如使用mac风格，pre paddingtop为30px
+pre::before {
+  background: #fc625d;
+  border-radius: 50%;
+  box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+  content: ' ';
+  height: 12px;
+  left: 12px;
+  margin-top: -20px;
+  position: absolute;
+  width: 12px;
+} */
+
+/* 有 class="language-java"
+pre[class*="language-"] {
+  padding: 1em
+} */
+/* ----------------------- */
+
+
+/* vscode 预览 左右布局优化 */
+.preview-container {
+  display: flex !important;
+  flex-direction: row !important;
+
+  .mume {
+      flex: 1 1 !important;
+  }
+
+  .mume[for="preview"].hidden-preview {
+      display: none;
+  }
+
+  &.show-sidebar-toc .md-sidebar-toc {
+      width: fit-content !important;
+      line-height: 2.5em;
+      padding-top: 6px !important;
+  }
+}
+
+/* ----------------------- */
+
+/* 去掉开关图标，对齐 */
+.md-sidebar-toc ul,
+.md-sidebar-toc ol {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+
+  li {
+      margin-bottom: 0;
+  }
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc details summary.md-toc-link-wrapper {
+  margin-left: 13px;
+}
+
+.md-toc-link-wrapper {
+  /* display: block; */
+  padding-right: 20px;
+  list-style: none !important;
+}
+
+.preview-container.show-sidebar-toc .md-sidebar-toc details summary.md-toc-link-wrapper {
+  margin-left: 15px;
+}
+
+summary+div {
+  margin-left: 16px;
+}
+
+/* ----------------------- */
+
+
+
+
+
+/* 目录贴边优化 */
+.md-sidebar-toc .md-toc {
+  padding: 4px 8px 4px 4px !important;
+  &>details:nth-child(1)>summary::before {
+      content: '《';
+  }
+  &>details:nth-child(1)>summary::after {
+      content: ' 》';
+      padding-left: 5px;
+  }
+  &>details>summary+div {
+      margin-left: -8px;
+  }
+}
+
+.preview-container.show-sidebar-toc .mume,
+.preview-container.show-sidebar-toc .md-sidebar-toc {
+  height: 100vh !important;
+  position: initial !important;
+  overflow-y: scroll;
+}
+
+.preview-container #md-toolbar {
+  right: 100px !important;
+}
+
+.preview-container.show-sidebar-toc .md-sidebar-toc details summary a {
+  padding-left: 2px !important;
+}
+
+/* ----------------------- */
+
+
+/* 左右分栏 （注意div内需要一个tab，否则会影响标题显示） */
+.wrap2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  .box {
+      width: 48%;
+
+      &:nth-child(1) {
+          padding-right: 2%;
+          border-right: 1px solid #ddd;
+      }
+
+      &.lit3 {
+          width: 30%;
+      }
+
+      &.lit7 {
+          width: 66%;
+      }
+
+      &.lit4 {
+          width: 35%;
+      }
+
+      &.lit6 {
+          width: 61%;
+      }
+
+      &>p:first-child,
+      &>p:first-child em strong {
+          margin-top: 0;
+          padding-top: 0;
+      }
+  }
+}
+
+/* ----------------------- */
+
+
+/* 方便复制的小代码 */
+html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview {
+  /* 解决fixed不生效问题 */
+  left: 0;
+  transform: translateX(0);
+}
+
+.fix {
+  position: fixed;
+  width: 200px;
+  height: 35px;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+  border-radius: 4px;
+  outline: 5px solid #ffeead;
+  background-color: white;
+  border: 1px solid #d9534f;
+  box-sizing: border-box;
+  padding: 5px;
+  transition: height 1s 1s;
+  overflow: hidden;
+
+  &>p,
+  strong {
+      margin-top: 0;
+      padding-top: 0;
+  }
+
+  &:hover {
+      height: 700px;
+      transition: all 1s 0s;
+      overflow: scroll;
+  }
+}
+
+/* ----------------------- */
+
+
+/* 宽度100， */
+.tabb {
+  min-width: 100px;
+  display: inline-block;
+  color: #555cbe;
+}
+
+
+
+/* 图片经过放大 */
+img:hover {
+  animation: imgbig 0s linear 0.8s 1 normal forwards;
+}
+@keyframes  imgbig{
+  0%{
+  }
+  100%{
+      height: 80%;
+      width: auto;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      object-fit: contain;
+      transform: translate(-50%,-50%);
+      z-index: 99;
+  }
+}
+code[class*="language-"] .token.comment,
+pre[class*="language-"] .token.comment,
+code[class*="language-"] .token.prolog,
+pre[class*="language-"] .token.prolog,
+code[class*="language-"] .token.doctype,
+pre[class*="language-"] .token.doctype,
+code[class*="language-"] .token.cdata,
+pre[class*="language-"] .token.cdata {
+  color: #999988;
+  /* font-style: italic */
+}
+
+code[class*="language-"] .token.punctuation .regex-source,
+pre[class*="language-"] .token.punctuation .regex-source {
+  color: #9f9f9f
+}
+
+code[class*="language-"] .token.regex,
+pre[class*="language-"] .token.regex {
+  color: #ee82ee;
+}
+
+code[class*="language-"] .namespace,
+pre[class*="language-"] .namespace {
+  opacity: .7
+}
+
+code[class*="language-"] .token.property,
+pre[class*="language-"] .token.property {
+  /* font-weight: bold; */
+  color: #986801
+}
+
+code[class*="language-"] .token.boolean,
+pre[class*="language-"] .token.boolean,
+code[class*="language-"] .token.number,
+pre[class*="language-"] .token.number,
+code[class*="language-"] .token.function-name,
+pre[class*="language-"] .token.function-name {
+  color: #ff230f
+}
+
+code[class*="language-"] .token.tag,
+pre[class*="language-"] .token.tag {
+  color: #ff230f
+}
+
+code[class*="language-"] .token.symbol,
+pre[class*="language-"] .token.symbol {
+  color: #990073
+}
+
+code[class*="language-"] .token.selector,
+pre[class*="language-"] .token.selector {
+  color: #ef21df
+}
+
+code[class*="language-"] .token.attr-name,
+pre[class*="language-"] .token.attr-name {
+  color: #626262;
+}
+
+code[class*="language-"] .token.string,
+pre[class*="language-"] .token.string {
+  color: #3e9100
+}
+
+code[class*="language-"] .token.char,
+pre[class*="language-"] .token.char {
+  color: #606aa1
+}
+
+code[class*="language-"] .token.url,
+pre[class*="language-"] .token.url {
+  color: #888
+}
+
+code[class*="language-"] .token.atrule,
+pre[class*="language-"] .token.atrule,
+code[class*="language-"] .token.attr-value,
+pre[class*="language-"] .token.attr-value {
+  color: #02b100;
+}
+
+code[class*="language-"] .token.keyword,
+pre[class*="language-"] .token.keyword {
+  color: #b81eec;
+  /* color: #ff2323; */
+}
+
+code[class*="language-"] .token.function,
+pre[class*="language-"] .token.function {
+  color: #3e9100
+}
+
+// code[class*="language-"] .token.function-variable,
+// pre[class*="language-"] .token.function-variable {
+//     color: #ffa000
+// }
+
+code[class*="language-"] .token.maybe-class-name,
+pre[class*="language-"] .token.maybe-class-name {
+  color: #ffa000
+}
+
+code[class*="language-"] .token.property-access,
+pre[class*="language-"] .token.property-access {
+  color: #ff230f;
+}
+
+code[class*="language-"] .token.class-name,
+pre[class*="language-"] .token.class-name {
+  /* text-decoration: underline; */
+  color: #ffa000
+}
+
+code[class*="language-"] .token.variable,
+pre[class*="language-"] .token.variable {
+  color: #008080
+}
+
+code[class*="language-"] .token.important,
+pre[class*="language-"] .token.important,
+code[class*="language-"] .token.bold,
+pre[class*="language-"] .token.bold {
+  font-weight: bold
+}
+
+code[class*="language-"] .token.italic,
+pre[class*="language-"] .token.italic {
+  font-style: italic
+}
+
+code[class*="language-"] .token.entity,
+pre[class*="language-"] .token.entity {
+  cursor: help
+}

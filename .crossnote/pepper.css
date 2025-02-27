@@ -1,0 +1,845 @@
+html body {
+    font-family: Lato,"PingFang SC", "Microsoft YaHei", sans-serif !important;
+    line-height: 1.8;
+    font-weight: 500;
+    /* font-size: 14px; */
+    font-size: 15px;
+    overflow-x: hidden;
+    letter-spacing: 1px;
+    color: #4f4f4f;
+    /* background-color: #f4f5f5; */
+
+    background-color: #fff;
+    padding: 10px;
+    text-align: justify;
+    /* 文字两端对齐 */
+    word-break: break-all;
+    /* 最后一个单词挤不下时，先一个一个英文挤上去，实在挤不下的英文那就放第二行 */
+}
+
+/* 标签前的小标  🍲  \0000a0  ❤ */
+/* 小标结束 */
+
+html body .markdown-preview {
+    background: -webkit-linear-gradient(top, transparent 19px, #efefef 20px),
+        -webkit-linear-gradient(left, transparent 19px, #efefef 20px),
+        #fff;
+    background-size: 20px 20px;
+
+    /* 位移一点 */
+    /* width: 85% !important;
+    top: 1vh !important;
+    left: 50% !important;
+    transform: translateX(-50%); */
+    border-radius: 5px;
+}
+
+html body>:first-child {
+    margin-top: 0
+}
+
+
+
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6 {
+    line-height: 1;
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+
+html body h1 {
+    font-size: 22px;
+    color: #646464;
+    position: relative;
+    margin-bottom: 1.8em;
+    text-align: center;
+    border-bottom: 2px dotted #eea20a;
+    padding: 20px;
+    border-top: 2px dotted #eea20a;
+    counter-reset: h2counter;
+    z-index: 1;
+}
+
+html body h1::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    width: 100px;
+    height: 60px;
+    background: url(https://s1.ax1x.com/2023/03/14/pplcbWV.png);
+    background-size: 100%;
+    z-index: -1;
+}
+
+html body h2 {
+    font-size: 18px;
+    color: #eea20a;
+    counter-reset: h3counter;
+}
+
+html body h3 {
+    font-size: 17px;
+    color: #555cbe;
+    counter-reset: h4counter;
+}
+
+html body h4 {
+    font-size: 15px;
+    color: #5a5a5a;
+}
+
+html body h5,
+html body h6 {
+    font-size: 15px;
+    color: #5a5a5a;
+    margin-bottom: 24px;
+}
+
+html body h2::before,
+html body h3::before,
+html body h4::before,
+html body h5::before,
+html body h6::before {
+    min-width: 40px;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+html body h2:before {
+    counter-increment: h2counter;
+    content: counter(h2counter);
+}
+
+html body h3:before {
+    counter-increment: h3counter;
+    content: counter(h2counter) "." counter(h3counter);
+}
+
+html body h4:before {
+    counter-increment: h4counter;
+    content: "（" counter(h4counter) "）";
+    margin-left: -7px;
+    padding-right: 20px;
+}
+
+html body h5:before {
+    content: "❥";
+    margin-left: 3px;
+    padding-right: 12px;
+}
+
+html body h6:before {
+    content: "(❥)";
+}
+
+html body strong {
+    /* color: #fa6069; */
+    color: #ff404b;
+    padding: 0 2px;
+}
+
+html body em {
+    /* color: #4c9800; */
+    color: #63ae18;
+    font-weight: bold;
+    font-style: normal;
+    padding: 0 2px;
+}
+
+html body em strong {
+    color: #555cbe;
+    padding: 20px 0 0 0;
+    margin-left: -7px;
+    /* font-size: 14px; */
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    display: inline-block;
+}
+
+html body em strong::after {
+    content: "」";
+}
+
+html body em strong::before {
+    content: "「";
+}
+
+html body del {
+    color: #4f4f4f;
+}
+
+html body a:not([href]) {
+    color: inherit;
+    text-decoration: none
+}
+
+html body a {
+    color: #ddd;
+    text-decoration: none
+}
+
+html body a:hover {
+    color: #cecece;
+    text-decoration: none
+}
+
+html body img {
+    max-width: 100%;
+    border: 1px solid #f2f2f2;
+    border-left: 1px solid #d9d9d9;
+    border-radius: 2px;
+    margin-right: 3px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 8px;
+    vertical-align: bottom;
+    background-color: #ffffffc9;
+    box-shadow: 5px 8px 9px -1px rgb(0 0 0 / 3%),
+        0 3px 5px 0 rgb(0 0 0 / 3%),
+        2px 3px 4px -1px rgb(0 0 0 / 4%);
+    box-sizing: border-box;
+}
+
+html body img[src*='img_5'] {
+    width: 49%;
+}
+
+html body img[src*='img_3'] {
+    width: 33%;
+}
+html body img[src*='img_7'] {
+    width: 70%;
+}
+
+
+html body ul.no-list,
+html body ol.no-list {
+    padding: 0;
+    list-style-type: none
+}
+
+html body ul,
+html body ol {
+    margin-left: -20px;
+    margin-top: 20px;
+}
+
+html body ol li,
+html body ul li {
+    margin-bottom: 18px;
+    list-style: inherit;
+}
+
+html body ul li {
+    list-style: square;
+}
+
+html body ol ul,
+html body ol ol,
+html body ul ul,
+html body ul ol {
+    padding-left: 5em;
+    margin-top: 8px;
+    /* font-size: 14px; */
+    font-size: 15px;
+}
+
+html body ol ul li,
+html body ol ol li,
+html body ul ul li,
+html body ul ol li {
+    margin-bottom: 7px;
+}
+
+html body ol li {
+    padding-left: 6px;
+}
+
+html body .contains-task-list {
+    padding-left: 110px;
+}
+
+html body .task-list-item {
+    list-style: none;
+}
+
+
+html body li>p {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+html body .task-list-item-checkbox {
+    margin: 0 .2em .25em -1.8em;
+    vertical-align: middle
+}
+
+html body input[type=checkbox] {
+    cursor: pointer;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    /* font-size: 14px; */
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+html body input[type=checkbox]::before {
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: #FFF;
+    border: 1px solid #555cbe;
+    border-radius: 2px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+html body input[type=checkbox]:checked::after {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    content: "✓";
+    color: #fa6069;
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+
+html body blockquote {
+    color: #666;
+    padding: 8px 23px;
+    margin: 6px 0;
+    border-left: 4px solid #555cbe;
+    background-color: #f3f4ff;
+}
+
+html body blockquote::after {
+    display: block;
+    content: '';
+}
+
+html body blockquote>p {
+    margin: 16px 0;
+}
+
+html body blockquote>p>code {
+    text-shadow: 0px 0px 1px #d7ffe5;
+}
+
+
+html body blockquote>:first-child {
+    margin-top: 0
+}
+
+html body blockquote>:last-child {
+    margin-bottom: 0
+}
+
+html body hr {
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+html body table {
+    display: inline-block !important;
+    /* font-size: 14px; */
+    font-size: 15px;
+    width: auto;
+    max-width: 100%;
+    overflow: auto;
+    border-collapse: collapse;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* 自己加上 */
+html body thead {
+    background: #eff3f5;
+    color: #555cbe;
+    text-align: left;
+}
+
+html body tr:nth-child(2n) {
+    background-color: #fcfcfc;
+}
+
+html body td {
+    min-width: 120px;
+}
+
+html body table td,
+html body table th {
+    padding: 12px 10px;
+    line-height: 24px;
+    border: #e0e0e0 solid 1px;
+}
+
+html body dl {
+    padding: 0
+}
+
+html body dl dt {
+    padding: 0;
+    margin-top: 16px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold
+}
+
+html body dl dd {
+    padding: 0 16px;
+    margin-bottom: 16px
+}
+
+html body code {
+    /* font-family: Source Code Pro, DejaVu Sans Mono, Ubuntu Mono, Anonymous Pro, Droid Sans Mono, Menlo, Monaco, Consolas, Inconsolata, Courier, monospace, PingFang SC, Microsoft YaHei, sans-serif; */
+    /* font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace; */
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    overflow-x: auto;
+    padding: 1px 6px;
+    /* color: #4c9800;
+    background-color: #fff; */
+    margin: 0 .5em;
+    /* csdn红色方案 */
+    /* color: #d70000;
+    background-color: #ffefef; */
+    color: #464dbf;
+    background-color: #f5f5f5;
+    white-space: pre-line;
+}
+
+html body p mark {
+    padding: 1.5px 6px;
+    margin: 0 .5em;
+    background-color: #ffff00dc;
+    color: #242424;
+}
+
+html body code::before,
+html body code::after {
+    letter-spacing: -0.5em;
+    content: "\00a0"
+}
+
+html body pre>code {
+    font-size: 12px;
+    font-family: inherit;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 15px 12px;
+    margin: 0;
+    word-break: normal;
+    display: block;
+    overflow-x: auto;
+    padding-left: 2em;
+}
+
+html body .highlight {
+    margin-bottom: 16px
+}
+
+html body .highlight pre,
+html body pre {
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    position: relative;
+}
+
+html body .mume-header+pre {
+    margin-top: inherit;
+}
+
+html body .highlight pre {
+    margin-bottom: 0;
+    word-break: normal
+}
+
+html body pre code,
+html body pre tt {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0
+}
+
+html body pre code:before,
+html body pre tt:before,
+html body pre code:after,
+html body pre tt:after {
+    content: normal
+}
+
+html body kbd {
+    color: #2f2f2f;
+    border: 1px solid #43484c;
+    padding: 2px 4px;
+    border-radius: 3px
+}
+
+@media print {
+    html body {
+        background-color: #1d1f21;
+    }
+
+    html body h1,
+    html body h2,
+    html body h3,
+    html body h4,
+    html body h5,
+    html body h6 {
+        color: #fff;
+        page-break-after: avoid;
+    }
+
+    html body blockquote {
+        color: #9ba09d;
+    }
+
+    html body pre {
+        page-break-inside: avoid;
+    }
+
+    html body table {
+        display: table;
+    }
+
+    html body img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    html body pre,
+    html body code {
+        word-wrap: break-word;
+        white-space: pre;
+    }
+}
+
+html body a {
+    text-decoration: none;
+    color: #4ea1db;
+    border-bottom: 1px solid #a5c7e7;
+}
+
+html body a:hover,
+html body a:active {
+    color: #275b8c;
+}
+
+/* ---滚动条--- */
+
+/* 整个滚动条 */
+html body .md-sidebar-toc::-webkit-scrollbar,
+::-webkit-scrollbar {
+    /* 对应纵向滚动条的宽度 */
+    width: 8px !important;
+    /* 对应横向滚动条的宽度 */
+    height: 8px;
+    margin-right: 20px;
+}
+
+/* 滚动条上的滚动滑块 */
+::-webkit-scrollbar-thumb {
+    background-color: #dedede !important;
+    border-radius: 10px !important;
+    border: 0 !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a1a1a1 !important;
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+    background-color: #fcfcfc !important;
+    border-radius: 32px;
+}
+
+/* ----------------------- */
+
+/* --- 侧边栏及内容整体宽度 --- */
+body {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.md-sidebar-toc .md-toc .md-toc-link-wrapper a {
+    /* margin-left: -3px; */
+    border-bottom: 0;
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc {
+    /* width: 350px !important; */
+    width: fit-content !important;
+    overflow-y: scroll !important;
+    height: 100vh !important;
+    position: inherit !important;
+    padding-top: 6px !important;
+}
+
+@media screen and (min-width: 914px) {
+    html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+        padding: 2em calc(37% - 457px + 2em) !important;
+    }
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc {
+    font-size: 9px;
+    line-height: 3.3em;
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc details summary.md-toc-link-wrapper {
+    margin-left: 3px;
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc details summary a {
+    padding-left: 5px !important;
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+    width: calc(100% - 350px) !important;
+    margin-left: 8px !important;
+    padding: 2em calc(34% - 536px + 2em) !important;
+    overflow-y: scroll;
+    height: 100vh;
+    flex: 1;
+    position: initial !important;
+}
+
+/* ----------------------- */
+
+/* 去掉开关图标，对齐 */
+.md-sidebar-toc ul,
+.md-sidebar-toc ol {
+    display: inline-block;
+    padding: 0;
+    margin: 0
+}
+
+.md-sidebar-toc ul li,
+.md-sidebar-toc ol li {
+    margin-bottom: 0;
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc details summary.md-toc-link-wrapper {
+    margin-left: 13px;
+}
+
+.md-toc-link-wrapper {
+    /* display: block; */
+    padding-right: 20px;
+    list-style: none !important;
+}
+
+.preview-container.show-sidebar-toc .md-sidebar-toc details summary.md-toc-link-wrapper {
+    margin-left: 15px;
+}
+
+summary+div {
+    margin-left: 16px;
+}
+
+/* ----------------------- */
+
+
+/* vscode 预览 左右布局优化 */
+.preview-container .mume[for="preview"].hidden-preview {
+    display: none;
+}
+
+.preview-container {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.preview-container .mume {
+    flex: 1 1 !important;
+}
+
+.preview-container.show-sidebar-toc .md-sidebar-toc {
+    width: fit-content !important;
+    line-height: 2.5em;
+    padding-top: 6px !important;
+}
+
+/* ----------------------- */
+
+
+/* 目录贴边优化 */
+.md-sidebar-toc .md-toc {
+    padding: 4px 8px 4px 4px!important;
+}
+
+.md-sidebar-toc .md-toc>details:nth-child(1)>summary::before {
+    content: '《';
+}
+
+.md-sidebar-toc .md-toc>details:nth-child(1)>summary::after {
+    content: ' 》';
+    padding-left: 5px;
+}
+
+.md-sidebar-toc .md-toc>details>summary+div {
+    margin-left: -8px;
+}
+
+.preview-container.show-sidebar-toc .mume,
+.preview-container.show-sidebar-toc .md-sidebar-toc {
+    height: 100vh !important;
+    position: initial !important;
+    overflow-y: scroll;
+}
+
+.preview-container #md-toolbar {
+    right: 100px !important;
+}
+
+.preview-container.show-sidebar-toc .md-sidebar-toc details summary a {
+    padding-left: 2px !important;
+}
+
+/* ----------------------- */
+
+
+/* 左右分栏 （注意div内需要一个tab，否则会影响标题显示） */
+.wrap2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap2 .box {
+    width: 48%;
+}
+
+.wrap2 .box:nth-child(1) {
+    padding-right: 2%;
+    border-right: 1px solid #ddd;
+}
+
+.wrap2 .box.lit3 {
+    width: 30%;
+}
+
+.wrap2 .box.lit7 {
+    width: 66%;
+}
+
+.wrap2 .box.lit4 {
+    width: 35%;
+}
+
+.wrap2 .box.lit6 {
+    width: 61%;
+}
+
+.wrap2 .box>p:first-child,
+.wrap2 .box>p:first-child em strong {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* ----------------------- */
+
+
+/* 方便复制的小代码 */
+html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview {
+    /* 解决fixed不生效问题 */
+    left: 0;
+    transform: translateX(0);
+}
+
+.fix {
+    position: fixed;
+    width: 200px;
+    height: 35px;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+    border-radius: 4px;
+    outline: 5px solid #ffeead;
+    background-color: white;
+    border: 1px solid #d9534f;
+    box-sizing: border-box;
+    padding: 5px;
+    transition: height 1s 1s;
+    overflow: hidden;
+}
+.fix >p,.fix strong {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.fix:hover {
+    height: 700px;
+    transition: all 1s 0s;
+    overflow: scroll;
+}
+
+/* ----------------------- */
+
+
+/* 添加标题序号，遮住文章内容的序号，保留目录序号 */
+ html body h2:before,
+html body h3:before,
+html body h4:before,
+html body h5:before,
+html body h6:before {
+    padding-right: 10px;
+    background-color: #fff;
+    margin-right: -22px;
+    z-index: 99;
+    position: relative;
+    height: 1.1em;
+}
+
+html body h2:before {
+    margin-right: -22px;
+}
+html body h3:before {
+    margin-right: -40px;
+}
+html body h4:before {
+    margin-right: -46px;
+}
+html body h5:before {
+    margin-right: -15px;
+}
+html body h6:before {
+    margin-right: -23px;
+}
+
+/* ----------------------- */
+
+/* 宽度100， */
+.tabb {
+    width: 100px;
+    display: inline-block;
+}
+
+/* ----------------------- */
+
+html body h2:nth-of-type(n+10)::before {
+    margin-right: -30px;
+}
+
+html body h3:nth-of-type(n+10)::before {
+    margin-right: -48px;
+}

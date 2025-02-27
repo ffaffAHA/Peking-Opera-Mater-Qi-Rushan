@@ -1,0 +1,313 @@
+// 定义颜色变量
+@text-color: #383838;
+@main-color: #a862ea;
+@background-color: #fff;
+@secondary-bg-color: #f8f5ff;
+@shadow-color: #e7daff;
+
+.markdown-body {
+    color: @text-color;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    word-break: break-word;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(0deg, transparent 24%, rgba(201, 195, 195, .329) 25%, hsla(0, 8%, 80.4%, .05) 26%, transparent 27%, transparent 74%, hsla(0, 5.2%, 81%, .185) 75%, rgba(180, 176, 176, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(204, 196, 196, .226) 25%, hsla(0, 4%, 66.1%, .05) 26%, transparent 27%, transparent 74%, hsla(0, 5.2%, 81%, .185) 75%, rgba(180, 176, 176, .05) 76%, transparent 77%, transparent);
+    background-color: @background-color;
+    background-size: 50px 50px;
+    padding-bottom: 60px;
+
+    &::selection {
+        color: #fff;
+        background-color: @main-color;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 24px 0 12px;
+        color: @main-color;
+    }
+
+    h1 {
+        line-height: 2;
+        font-size: 1.4em;
+
+        ~ p:first-of-type:first-letter {
+            color: @main-color;
+            float: left;
+            font-size: 2em;
+            margin-right: .4em;
+            font-weight: bolder;
+        }
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    ol, ul {
+        padding-left: 2em;
+
+        li {
+            margin-bottom: 0;
+            padding-left: .2em;
+
+            &::marker {
+                color: @main-color;
+            }
+
+            &.task-list-item {
+                list-style: none;
+
+                ol, ul {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        ol, ul {
+            margin-top: 10px;
+        }
+    }
+
+    a, code, h1, h2, h3, h4, h5, h6, li, p {
+        opacity: .85;
+        vertical-align: baseline;
+        transition: all .1s ease;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    a {
+        display: inline-block;
+        color: @main-color;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 98%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            transform: scaleX(0);
+            background-color: @main-color;
+            transform-origin: bottom right;
+            transition: transform .3s ease-in-out;
+        }
+
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        &:active, &:link {
+            color: @main-color;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        user-select: none;
+        margin: 1em 0;
+        transition: transform .2s ease 0s;
+        background-color: @secondary-bg-color;
+        box-shadow: 0 0 10px @shadow-color;
+
+        &:hover {
+            opacity: 1;
+            box-shadow: 0 0 20px @shadow-color;
+            transform: translateY(-1px);
+        }
+    }
+
+    blockquote {
+        padding: .5em 1em;
+        margin: 12px 0;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        border-left: 3px solid @main-color;
+        background-color: @secondary-bg-color;
+
+        > p {
+            margin: 0;
+        }
+    }
+
+    .math {
+        font-style: italic;
+        margin: 12px 0;
+        padding: .5em 1em;
+        background-color: @secondary-bg-color;
+
+        > p {
+            margin: 0;
+        }
+    }
+
+    code {
+        padding: 2px .4em;
+        overflow-x: auto;
+        color: @main-color;
+        font-weight: 700;
+        word-break: break-word;
+        font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+        background-color: @secondary-bg-color;
+    }
+
+    pre {
+        margin: 2em 0;
+
+        > code {
+            display: block;
+            padding: 1.5em;
+            word-break: normal;
+            font-size: .9em;
+            font-style: normal;
+            font-weight: 400;
+            font-family: Operator Mono, Consolas, Monaco, Menlo, monospace;
+            line-height: 18px;
+            color: @text-color;
+            border-radius: 2px;
+            scroll-behavior: smooth;
+            box-shadow: 0 0 10px @shadow-color;
+
+            &:hover {
+                box-shadow: 0 0 20px @shadow-color;
+            }
+
+            &::-webkit-scrollbar {
+                height: 6px;
+                background-color: @secondary-bg-color;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: @shadow-color;
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+        }
+    }
+
+    hr {
+        margin: 2em 0;
+        border-top: 1px solid @main-color;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+        max-width: 100%;
+        overflow: auto;
+        border-collapse: collapse;
+
+        thead {
+            color: @main-color;
+            background: @secondary-bg-color;
+        }
+
+        td, th {
+            padding: .5em;
+            border: 1px solid @shadow-color;
+        }
+
+        tr {
+            background-color: @secondary-bg-color;
+        }
+    }
+
+    @media (max-width: 720px) {
+        font-size: 12px;
+    }
+}
+
+// 代码高亮样式
+.markdown-body pre,
+.markdown-body pre > code.hljs {
+    background: #2d2b57;
+}
+
+.hljs-title {
+    color: #fad000;
+    font-weight: 400;
+}
+
+.hljs-name {
+    color: #a1feff;
+}
+
+.hljs-tag {
+    color: #fff;
+}
+
+.hljs-attr {
+    color: #f8d000;
+    font-style: italic;
+}
+
+.hljs-built_in,
+.hljs-keyword,
+.hljs-section,
+.hljs-selector-tag {
+    color: #fb9e00;
+}
+
+.hljs-subst,
+.markdown-body pre,
+.markdown-body pre > code.hljs {
+    color: #e3dfff;
+}
+
+.hljs-addition,
+.hljs-attribute,
+.hljs-bullet,
+.hljs-code,
+.hljs-deletion,
+.hljs-quote,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-pseudo,
+.hljs-string,
+.hljs-symbol,
+.hljs-template-tag {
+    color: #4cd213;
+}
+
+.hljs-meta,
+.hljs-meta-string {
+    color: #fb9e00;
+}
+
+.hljs-comment {
+    color: #ac65ff;
+}
+
+.hljs-keyword,
+.hljs-literal,
+.hljs-name,
+.hljs-selector-tag,
+.hljs-strong {
+    font-weight: 400;
+}
+
+.hljs-literal,
+.hljs-number {
+    color: #fa658d;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: 700;
+}

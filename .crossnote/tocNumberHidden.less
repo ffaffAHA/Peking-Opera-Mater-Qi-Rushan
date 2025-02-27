@@ -1,0 +1,38 @@
+/* 添加标题序号，遮住文章内容的序号，保留目录序号 */
+html body h2:before,
+html body h3:before,
+html body h4:before,
+html body h5:before {
+    padding-right: 10px;
+    background-color: #fff;
+    margin-right: -22px;
+    z-index: 99;
+    position: relative;
+    height: 1.1em;
+}
+
+html body h2:before {
+    margin-right: -22px;
+}
+html body h3:before {
+    margin-right: -40px;
+}
+html body h4:before {
+    margin-right: -46px;
+}
+html body h5:before {
+    margin-right: -15px;
+}
+
+// 二级标题序号10+
+html body h2:nth-of-type(n+10):before {
+    margin-right: -32px;
+}
+html body h2:nth-of-type(n+10) ~ h3:before {
+    margin-right: -50px;
+}
+
+// 目前还存在的bug
+// x.xx.  xx.xx.
+
+/* ----------------------- */

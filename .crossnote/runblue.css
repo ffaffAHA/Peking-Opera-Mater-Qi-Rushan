@@ -1,0 +1,30 @@
+/* ---滚动条--- */
+
+/* 整个滚动条 */
+html body .md-sidebar-toc::-webkit-scrollbar,
+::-webkit-scrollbar {
+  /* 对应纵向滚动条的宽度 */
+  width: 8px !important;
+  /* 对应横向滚动条的宽度 */
+  height: 8px;
+  margin-right: 20px;
+}
+
+/* 滚动条上的滚动滑块 */
+::-webkit-scrollbar-thumb {
+  background-color: #dedede !important;
+  border-radius: 10px !important;
+  border: 0 !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a1a1a1 !important;
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+  background-color: #fcfcfc !important;
+  border-radius: 32px;
+}
+
+/* ----------------------- */

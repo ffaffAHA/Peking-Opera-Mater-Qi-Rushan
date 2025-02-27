@@ -1,0 +1,65 @@
+/* ------- 浏览器侧边栏显示时 -------- */
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview {
+  /* width: calc(100% - 350px) !important; */
+  margin-left: 8px !important;
+  /* padding: 2em calc(34% - 536px + 2em) !important; */
+  overflow-y: scroll;
+  height: 100vh;
+  flex: 1;
+  position: initial !important;
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc {
+  width: fit-content !important;
+  overflow-y: scroll !important;
+  height: 100vh !important;
+  position: inherit !important;
+  padding-top: 6px !important;
+  box-sizing: border-box;
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc {
+  font-size: 9px;
+  line-height: 3.3em;
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc details summary.md-toc-link-wrapper {
+  margin-left: 3px;
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc details summary.md-toc-link-wrapper .md-toc-link p,
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc details summary.md-toc-link-wrapper .md-toc-link div {
+  display: inline;
+}
+
+html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc details summary a {
+  padding-left: 5px !important;
+  display: inline-block;
+}
+
+/* 修正注释格式 */
+/* 没生效 复制过来的 */
+html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn {
+  position: fixed;
+  bottom: 8px;
+  left: 8px;
+  font-size: 28px;
+  cursor: pointer;
+  color: inherit;
+  z-index: 99;
+  width: 32px;
+  text-align: center;
+  opacity: 0.4;
+}
+
+@media screen and (min-width: 914px) {
+  html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+    padding: 2em calc(37% - 457px + 2em) !important;
+  }
+}
+/* ----------------------- */
